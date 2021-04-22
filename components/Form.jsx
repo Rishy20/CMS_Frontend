@@ -2,8 +2,32 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Select from "./Select";
 import Input from "./Input";
+import useForm from "./useForm";
+import validate from "./validateInfo";
+import Button from "./Button";
 
-function Form(){
+const btnStyle={
+    marginTop:30,
+    marginBottom:10,
+    width:"100%",
+    textAlign:"right",
+}
+const btnTop={
+    position: "absolute",
+    top: 146,
+    right: 35
+}
+
+function Form(props){
+    const url = props.url;
+    const inputs = props.inputs;
+    const names = props.names;
+    const callback = props.callback;
+    const buttons = props.btns;
+
+    //Import methods from useForm hook
+    const {handleChange, handleSubmit, values, errors } = useForm(callback,validate,names,url);
+
     return(
         <div>
             <form onSubmit={handleSubmit} >
@@ -19,14 +43,22 @@ function Form(){
                             }else {
                                 return <Grid item xs={12} md={6} key={input.name}>
                                     <Input label={input.label} value={values[input.name]} type={input.type}
-                                           id={input.name} name={input.name} onChange={handleChange}
+                                           id={input.name} name={input.name} onChange={handleChange} placeholder={input.placeholder}
                                            error={errors[input.name] ? errors[input.name] : ''} maxLength={input.maxLength}/>
                                 </Grid>
                             }
                         })
                     }
                 </Grid>
+                <div style={props.btnstyle==='top'? btnTop:btnStyle}>
+                    {
+                        buttons.map(btn => {
+                            return <Button btnStyle={btn.style} name={btn.name} type={btn.type} key={btn.name}/>
+                        })
+                    }
+                </div>
             </form>
         </div>
     )
 }
+export default Form;

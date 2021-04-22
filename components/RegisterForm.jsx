@@ -8,6 +8,7 @@ import validate from "./validateInfo";
 import Radio from "./Radio";
 import Select from "./Select"
 import PageTitle from "./PageTitle";
+import Form from "./Form";
 
 
 //Form Submit Url
@@ -59,23 +60,32 @@ const inputs=[
         maxLength: 12
     },
 ]
+//Buttons to be displayed in the form
+const buttons = [
+    {
+        name:"Next",
+        style:"btn-next",
+        type:"Submit"
+    },
+    {
+        name:"Cancel",
+        style:"btn-cancel",
+    },
+]
+//Input box names used in the form so that they can be sent to useForm hook to maintain the state
+const names={
+    fname:'',
+    lname:'',
+    gender:'',
+    email:'',
+    contact:'',
+    address:'',
+    age:'',
+    nic:'',
+}
 
 function RegisterForm({detailsEntered}){
 
-    //Input box names used in the form so that they can be sent to useForm hook to maintain the state
-    const val={
-        fname:'',
-        lname:'',
-        gender:'',
-        email:'',
-        contact:'',
-        address:'',
-        age:'',
-        nic:'',
-    }
-
-    //Import methods from useForm hook
-    const {handleChange, handleSubmit, values, errors } = useForm(detailsEntered,validate,val);
 
 
     return(
@@ -84,33 +94,8 @@ function RegisterForm({detailsEntered}){
             <PageTitle title="REGISTRATION INFORMATION"/>
             <div className="register-body">
 
-                <form onSubmit={handleSubmit} >
-                    <Grid container spacing={2}  justify="center">
-                        {
-                            //Map input array to input components
-                            inputs.map(input=>{
-                                if(input.type==="select"){
-                                    return <Grid item xs={12} md={6} key={input.name}>
-                                        <Select name={input.name} label={input.label} values={input.values} value={values[input.name]} onChange={handleChange}
-                                                error={errors[input.name] ? errors[input.name] : ''} />
-                                    </Grid>
-                                }else {
-                                    return <Grid item xs={12} md={6} key={input.name}>
-                                        <Input label={input.label} value={values[input.name]} type={input.type}
-                                               id={input.name} name={input.name} onChange={handleChange}
-                                               error={errors[input.name] ? errors[input.name] : ''} maxLength={input.maxLength}/>
-                                    </Grid>
-                                }
-                            })
-                        }
-                    </Grid>
-                    {/*Register Button*/}
-                    <div className="register-submit">
-                        <Button btnStyle="btn-next" name="Next" type="submit" />
-                        <Button btnStyle="btn-cancel" name="Cancel"/>
-                    </div>
+                <Form inputs={inputs} names={names} callback={detailsEntered} btns={buttons}/>
 
-                </form>
             </div>
         </div>
         )

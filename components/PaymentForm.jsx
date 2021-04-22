@@ -2,6 +2,7 @@ import React from "react";
 import PageTitle from "./PageTitle";
 import Grid from "@material-ui/core/Grid";
 import Input from "./Input";
+import Form from "./Form";
 
 const inputs=[
     {
@@ -38,19 +39,7 @@ function PaymentForm(props){
         <div>
             <PageTitle title="PAYMENT INFORMATION"/>
             <div style={style}>
-                <Grid container spacing={2}  justify="center">
-                    {
-                        //Map input array to input components
-                        inputs.map(input=>{
-
-                            return <Grid item xs={12} md={6} key={input.name}>
-                                <Input label={input.label} value={values[input.name]} type={input.type}
-                                       id={input.name} name={input.name} onChange={handleChange} placeholder={input.placeholder}
-                                       error={errors[input.name] ? errors[input.name] : ''} maxLength={input.maxLength}/>
-                            </Grid>
-                        })
-                    }
-                </Grid>
+                <Form inputs={inputs} names={values} callback={detailsEntered} btns={buttons}/>
 
             </div>
         </div>

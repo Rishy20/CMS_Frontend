@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="" />
+    <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Confirmation.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confirmation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Formbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Formbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Formbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Formbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PaymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PaymentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/useForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/useForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/validateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/validateInfo.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +28,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -24,6 +40,7 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1rIPGjpFX7YhDJIzMBHKRXT7nfm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms_backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms_admin" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -52,11 +69,22 @@
       <updated>1618660537132</updated>
       <workItem from="1618660538237" duration="34000" />
       <workItem from="1618660580692" duration="32646000" />
-      <workItem from="1618855041492" duration="79586000" />
+      <workItem from="1618855041492" duration="87800000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

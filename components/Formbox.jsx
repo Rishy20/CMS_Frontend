@@ -3,31 +3,28 @@ import './Formbox.css'
 import Button from "./Button";
 import Input from './Input'
 import Grid from '@material-ui/core/Grid'
+import Form from "./Form";
 
 //Formbox in admin menu
 function Formbox(props){
     const inputs= props.input;
+    const names = props.names;
+    const callback = props.callback;
+    const buttons = props.buttons;
+    const url = props.url;
     return(
         <div className='formbox'>
             <div className="form-top">
                 <h3 className="form-title">{props.title}</h3>
                 <span className="top-btn">
-                    <Button name={"Save Changes"} type={"save"}/>
-                    <Button name={"Cancel"} type={"cancel"}/>
+                    <Button btnStyle="btn-save" name="Save Changes" />
+                    <Button name="Cancel" btnStyle="btn-cancel"/>
                 </span>
             </div>
 
             <div className="form-body">
 
-                <Grid container spacing={2} justify="center">
-                    {   //Map input array to input components
-                        inputs.map(input=>{
-                            return <Grid item xs={12} md={6} >
-                                <Input label= {input.label} type={input.text} placeholder={input.placeholder}  id={input.id} key={input.id}/>
-                            </Grid>
-                        })
-                    }
-                </Grid>
+                <Form inputs={inputs} names={names} callback={callback} btns={buttons} url={url}/>
 
 
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Title from '../Title';
 import Formbox from "../Formbox";
 
@@ -49,11 +49,43 @@ const inputs=[
         maxLength: 12
     },
 ]
+//Buttons to be displayed in the form
+const buttons = [
+    {
+        name:"Register",
+        style:"btn-save",
+        type:"Submit"
+    },
+    {
+        name:"Cancel",
+        style:"btn-cancel",
+    },
+]
+//Input box names used in the form so that they can be sent to useForm hook to maintain the state
+const names={
+    fname:'',
+    lname:'',
+    gender:'',
+    email:'',
+    contact:'',
+    address:'',
+    age:'',
+    nic:'',
+}
+//Form Submit Url
+const url = "http://localhost:3000/api/v1/researchers";
 function Test(){
+    const[isSubmitted,setIsSubmitted] = useState(false);
+
+    function submitForm(){
+        setIsSubmitted(true);
+        console.log("Form Submitted")
+    }
+
     return (
         <div>
             <Title text="Test"/>
-            <Formbox title="Test Information" input={inputs}/>
+            <Formbox title="Test Information" input={inputs} buttons={buttons} names={names} callback={submitForm} url={url}/>
         </div>
     )
 }

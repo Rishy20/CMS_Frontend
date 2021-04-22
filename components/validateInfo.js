@@ -105,7 +105,6 @@ export default function validateInfo(values){
             const year = parseInt(date[1]);
             // currentYear = parseInt(currentYear);
 
-            console.log(date,month,year,currentMonth,currentYear);
             if(month === 0 || month > 12 || year === 0 || year > currentYear+10){
                 errors.expiry = "Please enter a valid expiry date";
             }

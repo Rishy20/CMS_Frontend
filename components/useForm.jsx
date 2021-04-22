@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 
 
-function useForm(callback,validate,val,url,isSubmit){
+function useForm(callback,validate,val,url){
 
     //Hook to store states of values
     const [values,setValues] = useState({
@@ -33,7 +33,7 @@ function useForm(callback,validate,val,url,isSubmit){
                 //Callback the submitForm method
                 callback(values);
                 // //Submit the form
-                if(isSubmit){
+                if(url){
                     submitForm();
                 }
 
