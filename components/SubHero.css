@@ -1,0 +1,36 @@
+.sub-hero-container{
+    width: 100%;
+    height: 165px;
+    background-color: rgba(0, 0, 0, 0.80);
+    bottom: 0;
+    position: absolute;
+    color: white;
+}
+@media(min-width: 1000px) {
+    .sub-hero-heading {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .sub-hero-description{
+        font-size: 12px;
+    }
+}
+@media(min-width: 1500px) {
+    .sub-hero-heading {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .sub-hero-description{
+        font-size: 14px;
+    }
+    .sub-hero-container{
+        height: 200px;
+    }
+}
+
+.hero-grid{
+    padding: 36px 65px !important;
+}
+.MuiGrid-container {
+    width: 100% !important;
+}

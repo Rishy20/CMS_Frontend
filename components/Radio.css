@@ -1,0 +1,8 @@
+.form-label{
+    margin-bottom: .5rem;
+    font-size: 14px;
+    display: inline-block;
+}
+.radio-group{
+    display: inline-block;
+}

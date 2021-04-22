@@ -1,0 +1,8 @@
+This text file contains all the components in the System
+
+Topbar - Admin Topbar
+Navbar- Admin Navbar
+Title - Admin Page Titles eg-Dashboard, Editors [text]
+Input - Input box with title [id,label,type,placeholder]
+Formbox - The white rectangular box used in admin pages to display the forms, tables [title,input]
+Button - Save and Cancel button [type(save/cancel),name]

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins",sans-serif;;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --blue:#06163A;
+    --gold:#E2BC7F;
+    --grey:#585858cf;
+    --lightGrey:#F8F8FB;
+}
+
+/*Main Content*/
+.main{
+    padding-top: 75px;
+    padding-left: 255px;
+}

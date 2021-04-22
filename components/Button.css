@@ -1,0 +1,53 @@
+.btn{
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn-save{
+    background-color: var(--gold);
+    color: white;
+}
+.btn-cancel{
+    background-color: var(--lightGrey);
+    padding: 8px 25px;
+}
+/*Button in the hero section of the home page*/
+.btn-hero{
+    background-color: var(--gold);
+    font-size: 18px;
+    padding: 12px 20px;
+    color: white;
+}
+
+.btn-outline{
+    background: transparent;
+    box-shadow: inset 0 0 0 1px rgb(80 86 102 / 25%);
+    font-size: 13px;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    padding: 10px 30px;
+    font-weight: 600;
+    transition: all .1s;
+}
+.btn-outline:hover{
+    background-color: var(--gold);
+    box-shadow: none;
+    color: white;
+}
+.btn-next{
+    background-color: var(--gold);
+    color: white;
+    padding: 8px 35px;
+}
+.selected{
+    background-color: var(--gold);
+    box-shadow: none;
+    color: white;
+}

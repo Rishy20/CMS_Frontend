@@ -1,0 +1,59 @@
+.ticket-table{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    border-collapse: collapse;
+}
+.ticket-heading th{
+    padding: 20px;
+    width: 250px;
+}
+.ticket-title{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.ticket-description{
+    font-size: 14px;
+    color: #a2a1a1;
+
+}
+.ticket-price{
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.ticket-features td{
+    text-align: center;
+    padding: 15px;
+}
+.ticket-table tbody>tr:nth-of-type(odd){
+    background-color: #f7f8f8;
+}
+.ticket-feature{
+    font-size: 14px;
+    color: #a2a1a1;
+    text-align: right !important;
+}
+.next-btn{
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+.tickets{
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.ticket-error{
+    color: red;
+    font-size: 14px;
+    float: right;
+    margin-right: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
