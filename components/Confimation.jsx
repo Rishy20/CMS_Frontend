@@ -101,7 +101,6 @@ function Confirmation(props){
             <PageTitle title="CONFIRMATION"/>
             <div className="confirmation-body">
                 <Grid container spacing={2}  justify="space-around">
-
                     {
                         confirmationItems.map(ci=>{
                             return <ConfirmationItem name={ci.name} value={details[ci.value]} key={ci.name}/>

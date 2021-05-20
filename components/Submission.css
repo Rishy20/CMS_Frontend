@@ -1,0 +1,12 @@
+.submission-form{
+    width: 900px;
+    margin: 30px auto 50px;
+}
+.submission-body{
+    margin-top: 50px;
+}
+.submission-btn{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}

@@ -3,17 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Confirmation.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confirmation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ConfirmationItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ConfirmationItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Formbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Formbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Formbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Formbox.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PaymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PaymentForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Radio.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/Radio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Radio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Radio.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Test.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Test.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/useForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/useForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/validateInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/validateInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +52,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cms_admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\public\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\components" />
     </key>
@@ -69,7 +75,16 @@
       <updated>1618660537132</updated>
       <workItem from="1618660538237" duration="34000" />
       <workItem from="1618660580692" duration="32646000" />
-      <workItem from="1618855041492" duration="87800000" />
+      <workItem from="1618855041492" duration="113534000" />
+      <workItem from="1619261187519" duration="26355000" />
+      <workItem from="1619554877498" duration="6494000" />
+      <workItem from="1619693826978" duration="239000" />
+      <workItem from="1619807171260" duration="3332000" />
+      <workItem from="1620258485733" duration="2568000" />
+      <workItem from="1620641331971" duration="57565000" />
+      <workItem from="1621253169502" duration="8399000" />
+      <workItem from="1621337954374" duration="10511000" />
+      <workItem from="1621441234988" duration="2743000" />
     </task>
     <servers />
   </component>
@@ -86,5 +101,17 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/Submission.jsx</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

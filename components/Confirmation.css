@@ -13,6 +13,7 @@
 .confirmation .detail{
     font-size: 18px;
     font-weight: 600;
+    vertical-align: top;
 }
 .confirmation .value{
     font-size: 18px;
@@ -24,4 +25,10 @@
 }
 .payment-body{
     margin-top: 50px;
+}
+.confirmation-img{
+    width: 100px;
+    height: 100px;
+    padding: 6px;
+    box-shadow: inset 0 0 4px 2px #f3f3f3;
 }

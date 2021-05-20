@@ -1,0 +1,20 @@
+.speaker-item-img{
+    width: 130px;
+    border-radius: 50%;
+}
+.speaker-item{
+    padding: 45px;
+}
+.speaker-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.speaker-item-name{
+    font-size: 16px;
+    font-weight: 600;
+}
+.speaker-item-profession{
+    font-weight: 500;
+    font-size: 12px;
+}

@@ -1,63 +1,41 @@
 import React from 'react';
 import Header from "../Header";
-import Hero from "../Hero"
+import Hero from "../Hero";
+import "./Home.css"
+import AttendeeRegister from "./AttendeeRegister";
+import UserRegister from "./UserRegister";
 import Accordion from "../Accordion";
-import RegisterForm from "../RegisterForm";
-import {useState} from "react";
-import Progress from "../Progress";
-import Tickets from "../Tickets";
-import Confirmation from "../Confimation";
+import RegisterTimer from "../RegisterTimer";
+import EventCount from "../EventCount";
+import {Speaker} from "@material-ui/icons";
+import Speakers from "../Speakers";
+import Workshops from "../Workshops";
+import Tracks from "../Tracks";
+import Sponsor from "../Sponsor";
 
-//Admin Dashboard Page
+//Home Page
 function Home(){
 
-    const[isSubmitted,setIsSubmitted] = useState(false);
-    const[isDetailEntered, setIsDetailEntered] = useState(false);
-    const [isTicketSelected, setIsTicketSelected] = useState(false);
-    const[values,setValues] = useState();
-    function submitForm(){
-        setIsSubmitted(true);
-        console.log("Form Submitted")
-    }
-    function detailsEntered(val){
-        setIsDetailEntered(true);
-        setValues(val);
-    }
 
-    function setTicket(ticket){
-        setValues({...values,ticket});
-        setIsTicketSelected(true);
-    }
     return (
         <div>
             <Header/>
             <Hero/>
-            {/*<Accordion/>*/}
+            <div className="home-body">
 
+                <h2 className="container-heading">The biggest Application Framework Conference in Sri Lanka</h2>
+                <div className="intro-body">
+                    At the new hybrid training events for JavaScript, Angular, React, HTML & CSS, a selection of first-class experts will give you in-depth information on how to optimally plan and successfully implement JavaScript and HTML-based applications, what strengths and weaknesses the various technologies have or how you do when choosing a suitable architecture. The 4-in-1 package allows you to book one event and attend four at the same time.
+                    For the first time, you can take part in the video workshops either on site or digitally . You have the choice! Are you new to JavaScript or HTML? Then our Fundamentals Day on October 4th offers you three full-day workshops on fundamental topics that you as a developer encounter when working with JavaScript or HTML - the ideal preparation for the following workshop days!
+                </div>
+                <RegisterTimer/>
+                <EventCount/>
+                <Speakers/>
+                <Workshops/>
+                <Tracks/>
+                <Sponsor/>
 
-            {
-                (() => {
-                    if(!isDetailEntered){
-                        return <>
-                            <Progress labels={["Registration", "Tickets", "Confirmation"]} selected={1} />
-                            <RegisterForm detailsEntered={detailsEntered}   />
-                        </>
-                    }else if(isDetailEntered && !isTicketSelected){
-                        return <>
-                            <Progress labels={["Registration", "Tickets", "Confirmation"]} selected={2} />
-                            <Tickets setTicket={setTicket}/>
-                        </>
-                    }else if(isDetailEntered && isTicketSelected){
-                        return <>
-                            <Progress labels={["Registration", "Tickets", "Confirmation"]} selected={3} />
-                            <Confirmation details={values} submitForm={submitForm}/>
-                        </>
-                    }
-
-                })()
-            }
-
-
+            </div>
         </div>
     )
 }

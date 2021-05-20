@@ -1,8 +1,7 @@
-import React from "react";
-import "./RegisterForm.css";
-import PageTitle from "./PageTitle";
-import Form from "./Form";
-
+import React, {useState} from "react";
+import "./UserLogin.css"
+import PageTitle from "../PageTitle";
+import Form from "../Form";
 
 //Form Submit Url
 const url = "http://localhost:3000/api/v1/researchers";
@@ -77,22 +76,21 @@ const names={
     nic:'',
 }
 
-function RegisterForm({detailsEntered}){
-
-
-
+function UserLogin(){
+    const[isSubmitted,setIsSubmitted] = useState(false);
+    function submitForm(){
+        setIsSubmitted(true);
+        console.log("Form Submitted")
+    }
     return(
-
-        <div className="register-form">
-            <PageTitle title="REGISTRATION INFORMATION"/>
-            <div className="register-body">
-
-                <Form inputs={inputs} names={names} callback={detailsEntered} btns={buttons}/>
-
+        <div className="user-register">
+            <div className="register-img">
+            </div>
+            <div className="user-register-body">
+                <PageTitle title="REGISTRATION INFORMATION"/>
+                    <Form inputs={inputs} names={names} callback={submitForm} btns={buttons} url={url}/>
             </div>
         </div>
-        )
-
-
+    )
 }
-export default RegisterForm
+export default UserLogin;

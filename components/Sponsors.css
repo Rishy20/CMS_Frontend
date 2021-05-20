@@ -1,0 +1,9 @@
+.sponsors{
+    margin-top: 50px;
+}
+.sponsor-items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}

@@ -18,12 +18,17 @@ function useForm(callback,validate,val,url){
         setValues({...values,[name]:value});
     };
 
+    const handleFileSubmit = ({file},name)=>{
+        setValues({...values,[name]:file});
+    }
+
     //This function is executed on form submission
     const handleSubmit = e=> {
         e.preventDefault();
         //Sets errors if there are errors
         setErrors(validate(values));
         setIsSubmitting(true);
+        console.log(errors);
     }
 
     useEffect(
@@ -43,22 +48,22 @@ function useForm(callback,validate,val,url){
 
     //This function handles the POST api call to submit the form data
     const submitForm = () =>{
-        console.log("In Fetch method")
 
-            // fetch(url,{
-            //     headers: {
-            //         'Accept': 'application/json',
-            //         'Content-Type': 'application/json'
-            //     },
-            //     method:"POST",
-            //     body: JSON.stringify(values)
-            // }).then(res => res.json())
-            //     .then(data=>console.log(data))
-            //     .catch(err=>console.log(err));
+
+            fetch(url,{
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                method:"POST",
+                body: JSON.stringify(values)
+            }).then(res => res.json())
+                .then(data=>console.log(data))
+                .catch(err=>console.log(err));
     }
 
 
-    return {handleChange,handleSubmit,values,errors};
+    return {handleChange,handleSubmit,values,errors,handleFileSubmit};
 
 }
 export default useForm;

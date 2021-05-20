@@ -4,5 +4,20 @@
     display: inline-block;
 }
 .radio-group{
+    display: inline-block !important;
+    margin-left: 24px;
+}
+.radio-group .MuiFormGroup-row {
+    flex-direction: row;
     display: inline-block;
+    margin-left: 24px;
+}
+.radio-group .MuiTypography-body1 {
+    font-size: 15px;
+}
+.MuiRadio-colorPrimary.Mui-checked {
+    color: var(--gold) !important;
+}
+.radio-group .MuiSvgIcon-root {
+    width: 0.9em;
 }

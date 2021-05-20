@@ -1,0 +1,15 @@
+.user-register .register-img{
+    background-image: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)),url("../../public/images/hero2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 35%;
+    background-position: center;
+}
+.user-register-body{
+    width: 65%;
+    padding: 50px;
+}
+.user-register{
+    display: flex;
+}

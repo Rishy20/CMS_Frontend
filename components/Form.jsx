@@ -5,6 +5,8 @@ import Input from "./Input";
 import useForm from "./useForm";
 import validate from "./validateInfo";
 import Button from "./Button";
+import RadioButton from "./Radio";
+import FileUpload from "./FileUpload";
 
 const btnStyle={
     marginTop:30,
@@ -26,7 +28,7 @@ function Form(props){
     const buttons = props.btns;
 
     //Import methods from useForm hook
-    const {handleChange, handleSubmit, values, errors } = useForm(callback,validate,names,url);
+    const {handleChange, handleSubmit, values, errors, handleFileSubmit } = useForm(callback,validate,names,url);
 
     return(
         <div>
@@ -40,6 +42,22 @@ function Form(props){
                                     <Select name={input.name} label={input.label} values={input.values} value={values[input.name]} onChange={handleChange}
                                             error={errors[input.name] ? errors[input.name] : ''} />
                                 </Grid>
+                            }else if(input.type==="radio-full"){
+                                return <Grid item xs={12} md={12} key={input.name}>
+                                    <RadioButton label={input.label} value={values[input.name]} values={input.values}
+                                                 id={input.name} name={input.name} onChange={handleChange}
+                                                 error={errors[input.name] ? errors[input.name] : ''} />
+                                </Grid>
+                            }else if(input.type==="radio"){
+                                return <Grid item xs={12} md={6} key={input.name}>
+                                    <RadioButton label={input.label} value={values[input.name]} values={input.values}
+                                           id={input.name} name={input.name} onChange={handleChange}
+                                           error={errors[input.name] ? errors[input.name] : ''} />
+                                </Grid>
+                            }else if(input.type === "image" || input.type === "file"){
+
+                                return <FileUpload callback={(file)=>{handleFileSubmit(file,input.name)}} type={input.type} label={input.label}/>
+
                             }else {
                                 return <Grid item xs={12} md={6} key={input.name}>
                                     <Input label={input.label} value={values[input.name]} type={input.type}

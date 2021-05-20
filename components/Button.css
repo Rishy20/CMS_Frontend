@@ -60,3 +60,10 @@
 .formbox .btn-save, .formbox .btn-cancel{
     font-size: 13px;
 }
+
+.btn-view-all{
+    background-color: var(--gold);
+    color: white;
+    padding: 8px 35px;
+    border-radius: 20px;
+}

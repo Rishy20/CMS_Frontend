@@ -1,0 +1,31 @@
+.workshops{
+    margin-top: 50px;
+}
+.workshop-items{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.workshop-item-img img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.workshop-item-content{
+    padding-left: 40px;
+    text-align: left;
+    padding-top: 20px;
+}
+.workshop-item{
+    display: flex;
+    padding: 20px 45px;
+    justify-content: center;
+}
+.workshop-heading{
+    color: #3c67ca;
+    font-size: 20px;
+    font-weight: 600;
+}
+.workshop-item .presenter-name{
+    font-style: italic;
+}
