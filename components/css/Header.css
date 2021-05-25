@@ -1,9 +1,12 @@
 .header{
     height: 70px;
-    /*background-color: rgb(6, 22, 58);*/
+    background-color: rgb(6, 22, 58);
     padding: 15px;
     position: absolute;
     width: 100%;
+}
+.home .header{
+    background-color: transparent;
 }
 .header-title{
     color: white;

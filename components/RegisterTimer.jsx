@@ -1,5 +1,5 @@
 import React from "react";
-import "./RegisterTimer.css"
+import "./css/RegisterTimer.css"
 export default function RegisterTimer(){
 
     return (

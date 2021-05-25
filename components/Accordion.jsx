@@ -1,16 +1,15 @@
 import React from "react";
 import AccordionItem from "./AccordionItem";
-import "./Accordion.css"
+import "./css/Accordion.css"
 
-function Accordion(){
+function Accordion(props){
     return(
         <div className="accordion">
-            <AccordionItem text="Event Details"/>
-            <AccordionItem text="Schedule"/>
-            <AccordionItem text="Presentations"/>
-            <AccordionItem text="Workshops"/>
-            <AccordionItem text="Speakers"/>
-            <AccordionItem text="Tickets"/>
+            {
+                props.items.map((item,index)=>{
+                    return  <AccordionItem text={item} isSelected={props.selected==index+1} />
+                })
+            }
         </div>
     )
 }

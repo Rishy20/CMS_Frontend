@@ -1,6 +1,6 @@
 import React from "react";
 import {FormControlLabel, Radio, RadioGroup} from "@material-ui/core";
-import "./Radio.css"
+import "./css/Radio.css"
 function RadioButton(props){
     return(
         <div>

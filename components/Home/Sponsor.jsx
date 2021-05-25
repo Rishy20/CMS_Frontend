@@ -1,7 +1,7 @@
 import React from "react";
 import SubTitle from "./SubTitle";
-import img from "url:../public/images/wso2-logo.png";
-import "./Sponsors.css"
+import img from "url:../../public/images/wso2-logo.png";
+import "../css/Sponsors.css"
 
 export default function Sponsor(){
     return(

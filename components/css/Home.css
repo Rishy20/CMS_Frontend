@@ -1,5 +1,5 @@
 .home-body{
-    width: 1200px;
+
     text-align: center;
     margin: 50px auto;
 }
@@ -9,6 +9,12 @@
     color: var(--blue);
 }
 .intro-body{
+
     margin-top: 30px;
     margin-bottom: 50px;
+}
+.limit-width{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }

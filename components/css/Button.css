@@ -67,3 +67,10 @@
     padding: 8px 35px;
     border-radius: 20px;
 }
+.btn-download{
+    background-color: var(--gold);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "url:../public/images/IMG_0550.jpg"
+import img from "url:../../public/images/IMG_0550.jpg"
 export default function WorkShopItem(){
     return(
         <div className="workshop-item">

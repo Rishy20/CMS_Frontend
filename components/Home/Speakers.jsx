@@ -1,13 +1,13 @@
 import React from "react";
-import Title from "./Title";
+import Title from "../Title";
 import SubTitle from "./SubTitle";
 import SpeakerItem from "./SpeakerItem";
-import "./Speakers.css"
-import Button from "./Button";
+import "../css/Speakers.css"
+import Button from "../Button";
 function Speakers(){
     return(
-        <div>
-            <SubTitle text="Speakers" />
+        <div className={"speakers"}>
+            <SubTitle text="Speakers" white={true}/>
             <div className="speaker-items">
                 <SpeakerItem/>
                 <SpeakerItem/>

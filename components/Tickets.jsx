@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "./PageTitle";
-import "./Tickets.css"
+import "./css/Tickets.css"
 import Button from "./Button";
 import TicketType from "./TicketType";
 import TicketFeatures from "./TicketFeatures";

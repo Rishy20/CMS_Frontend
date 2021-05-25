@@ -1,7 +1,7 @@
 .hero-container{
 
     background-image: linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%)),
-    url('../public/images/hero2.png');
+    url('../../public/images/hero2.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;

@@ -20,6 +20,7 @@
     display: flex;
     padding: 20px 45px;
     justify-content: center;
+    cursor: pointer;
 }
 .workshop-heading{
     color: #3c67ca;

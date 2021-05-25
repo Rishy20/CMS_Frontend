@@ -1,5 +1,5 @@
 import React from "react";
-import "./RegisterForm.css";
+import "./css/RegisterForm.css";
 import PageTitle from "./PageTitle";
 import Form from "./Form";
 

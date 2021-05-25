@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderItem from "./HeaderItem";
-import "./Header.css"
+import "./css/Header.css"
 
 const WEBSITE = "ICAF";
 function Header(){
@@ -10,8 +10,11 @@ function Header(){
             <span className="header-links">
                 <HeaderItem text="Home"/>
                 <HeaderItem text="Schedule"/>
-                <HeaderItem text="Speakers"/>
+                <HeaderItem text="Keynotes"/>
+                <HeaderItem text="Authors"/>
+                <HeaderItem text="Workshops"/>
                 <HeaderItem text="Downloads"/>
+                <HeaderItem text="Contact Us"/>
             </span>
             <span className="login-links">
                 <HeaderItem text="Login"/>

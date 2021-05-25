@@ -1,6 +1,6 @@
 import React from "react";
 import SubTitle from "./SubTitle";
-import "../components/Tracks.css"
+import "../css/Tracks.css"
 import TrackItem from "./TrackItem";
 export default function Tracks(){
     return(

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Billion Dreams';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Billion Dreams'),
+    url('https://fonts.cdnfonts.com/s/40599/BillionDreams_PERSONAL.woff')
+    format('woff');
+}
+.footer{
+    height: 250px;
+    width: 100%;
+    /*background-color: var(--blue);*/
+    color: white;
+    background-image: url("../../public/images/footer.png");
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footer-heading{
+    font-family: "Billion Dreams";
+    font-size: 60px;
+    color: var(--gold);
+}
+
+.footer-heading-container{
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 325px;
+}
+.footer-link-container{
+    text-align: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+
+}
+.footer-link{
+    padding: 0px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.footer-link:hover{
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+.footer-social-icons{
+    text-align: center;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin-right: 50px;
+}
+.footer-social-icons i{
+    color: white;
+    font-size: 30px;
+    padding: 0px 15px;
+}

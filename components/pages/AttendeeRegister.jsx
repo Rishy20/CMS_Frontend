@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from "../Header";
-import Hero from "../Hero"
+import Hero from "../Home/Hero"
 import Accordion from "../Accordion";
 import RegisterForm from "../RegisterForm";
 import {useState} from "react";

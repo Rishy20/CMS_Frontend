@@ -1,5 +1,5 @@
 import React from "react";
-import img from "url:../public/images/NodeJS.png";
+import img from "url:../../public/images/NodeJS.png";
 
 export default function TrackItem(){
     return(

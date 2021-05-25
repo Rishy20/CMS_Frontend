@@ -1,5 +1,5 @@
 import React from 'react';
-const style = {
+const black = {
     fontSize:26,
     fontWeight: 600,
     color: "black",
@@ -13,11 +13,17 @@ const hr={
     backgroundColor: "var(--gold)",
     border: "none"
 }
+const white={
+    fontSize:26,
+    fontWeight: 600,
+    textTransform: "uppercase",
+    color: "white"
+}
 //Home Page Titles
 function SubTitle(props){
     return(
         <div>
-            <div style={style}>{props.text}</div>
+            <div style={props.white?white:black}>{props.text}</div>
             <hr style={hr}/>
         </div>
     )

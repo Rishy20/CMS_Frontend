@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "./PageTitle";
-import "./Confirmation.css"
+import "./css/Confirmation.css"
 import Grid from "@material-ui/core/Grid";
 
 import Form from "./Form";

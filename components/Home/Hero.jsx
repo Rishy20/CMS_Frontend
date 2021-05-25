@@ -1,7 +1,7 @@
 import React from "react";
-import './Hero.css'
-import Button from "./Button";
-import SubHero from "./SubHero"
+import '../css/Hero.css'
+import Button from "../Button";
+import SubHero from "../SubHero"
 
 const heading = "INTERNATIONAL CONFERENCE ON APPLICATION FRAMEWORKS"
 const subheading = "28th June, Sri Lanka Institute of Information Technology, Malabe"

@@ -1,8 +1,8 @@
 import React from "react";
-import "../components/Workshops.css"
+import "../css/Workshops.css"
 import SubTitle from "./SubTitle";
 import WorkShopItem from "./WorkShopItem";
-import Button from "./Button";
+import Button from "../Button";
 
 export default function Workshops(){
     return(

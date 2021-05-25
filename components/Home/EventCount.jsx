@@ -1,6 +1,6 @@
 import React from "react";
 import EventCountItem from "./EventCountItem";
-import "./EventCount.css"
+import "../css/EventCount.css"
 
 export default function EventCount(){
     return(

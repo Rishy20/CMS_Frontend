@@ -1,10 +1,9 @@
 import React from "react";
 
-import "./AccordionItem.css"
 function AccordionItem(props){
 
     return(
-        <a className="accordion-item">{props.text}</a>
+        <a className={`accordion-item ${props.isSelected?"selected":""}`}>{props.text}</a>
     )
 
 }

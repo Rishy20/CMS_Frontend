@@ -1,0 +1,22 @@
+.page-title-wrap{
+    height: 350px;
+    width: 100%;
+    color: white;
+    background-image: url("../../public/images/footer.png");
+
+}
+.page-title-wrap .page-heading{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.page-title-wrap .page-heading-container{
+    text-align: center;
+    top: 55%;
+    position: relative;
+    transform: translateY(-50%);
+}
+.page-title-wrap .breadcrumbs{
+    cursor: pointer;
+}
