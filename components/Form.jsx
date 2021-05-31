@@ -7,6 +7,7 @@ import validate from "./validateInfo";
 import Button from "./Button";
 import RadioButton from "./Radio";
 import FileUpload from "./FileUpload";
+import TextBox from "./TextBox";
 
 const btnStyle={
     marginTop:30,
@@ -33,7 +34,7 @@ function Form(props){
     return(
         <div>
             <form onSubmit={handleSubmit} >
-                <Grid container spacing={2}  justify="center">
+                <Grid container spacing={2}  justify="flex-start">
                     {
                         //Map input array to input components
                         inputs.map(input=>{
@@ -56,9 +57,16 @@ function Form(props){
                                 </Grid>
                             }else if(input.type === "image" || input.type === "file"){
 
-                                return <FileUpload callback={(file)=>{handleFileSubmit(file,input.name)}} type={input.type} label={input.label}/>
+                                return <FileUpload callback={(file)=>{handleFileSubmit(file,input.name)}} type={input.type} label={input.label} key={input.name}/>
 
-                            }else {
+                            } else if(input.type === "textbox") {
+                                return <Grid item xs={12} md={12} key={input.name}>
+                                    <TextBox label={input.label} value={values[input.name]}
+                                           id={input.name} name={input.name} onChange={handleChange} placeholder={input.placeholder}
+                                           error={errors[input.name] ? errors[input.name] : ''} />
+                                </Grid>
+                            }
+                            else {
                                 return <Grid item xs={12} md={6} key={input.name}>
                                     <Input label={input.label} value={values[input.name]} type={input.type}
                                            id={input.name} name={input.name} onChange={handleChange} placeholder={input.placeholder}
@@ -66,7 +74,9 @@ function Form(props){
                                 </Grid>
                             }
                         })
+
                     }
+
                 </Grid>
                 <div style={props.btnstyle==='top'? btnTop:btnStyle}>
                     {

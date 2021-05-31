@@ -58,7 +58,7 @@ function useForm(callback,validate,val,url){
                 method:"POST",
                 body: JSON.stringify(values)
             }).then(res => res.json())
-                .then(data=>console.log(data))
+                .then(data=>callback(data))
                 .catch(err=>console.log(err));
     }
 

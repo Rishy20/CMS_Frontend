@@ -27,56 +27,8 @@ const url = "http://localhost:3000/api/v1/researchers";
 function UserConfirmation(props){
 
     const {details,submitForm} = props;
+    const confirmationItems = props.confirmationItems;
 
-
-    //Details to be displayed in confirmation section
-    const confirmationItems=[
-        {
-            name:"User Type",
-            value:"usertype"
-        },
-        {
-            name: "Image",
-            value: "img"
-        },
-        {
-            name:"First name",
-            value:"fname"
-        },
-        {
-            name:"Last name",
-            value:"lname"
-        },
-        {
-            name:"Email",
-            value:"email"
-        },
-        {
-            name:"Contact",
-            value:"contact"
-        },
-        {
-            name:"Gender",
-            value:"gender"
-        },
-        {
-            name:"Country",
-            value:"country"
-        },
-        {
-            name:"Job Title",
-            value:"jobTitle"
-        },
-        {
-            name:"Company",
-            value:"company"
-        },
-        {
-            name: "File Name",
-            value: "documentName"
-        }
-    ]
-    console.log(details)
     return(
         <div className="confirmation">
             <PageTitle title="CONFIRMATION"/>

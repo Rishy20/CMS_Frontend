@@ -6,7 +6,7 @@ import DownloadItem from "../DownloadItem";
 export default function Downloads(){
     return(
         <div>
-            <Header/>
+
             <PageTitleWrap title={"Downloads"}/>
             <div className={"download-items"}>
                 <DownloadItem/>

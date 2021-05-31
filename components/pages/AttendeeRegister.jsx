@@ -8,6 +8,7 @@ import Progress from "../Progress";
 import Tickets from "../Tickets";
 import Confirmation from "../Confimation";
 import UserConfirmation from "../UserConfirmation";
+import PageTitleWrap from "../PageTitleWrap";
 
 //Attendee Register Page
 function AttendeeRegister(){
@@ -33,7 +34,7 @@ function AttendeeRegister(){
     }
     return (
         <div>
-
+            <PageTitleWrap title={"Register"}/>
             {
                 (() => {
                     if(!isDetailEntered){

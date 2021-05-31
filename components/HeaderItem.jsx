@@ -4,7 +4,7 @@ import "./css/HeaderItem.css"
 function HeaderItem(props){
 
     return(
-        <a className="header-link" href="#">{props.text}</a>
+        <span className="header-link" onClick={props.onClick}>{props.text}</span>
     )
 }
 

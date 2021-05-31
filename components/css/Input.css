@@ -1,4 +1,4 @@
-.input-box{
+.input-box,.text-box{
     display: block;
     width: 100%;
     padding: .375rem .75rem;
@@ -15,7 +15,7 @@
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.input-box:focus{
+.input-box:focus, .text-box:focus{
     color: #212529;
     background-color: #fff;
     border-color: #86b7fe;
@@ -30,4 +30,7 @@
 .error{
     color: red;
     font-size: 14px;
+}
+.text-box{
+    height: 100px;
 }

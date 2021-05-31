@@ -7,7 +7,7 @@ import ScheduleItem from "../ScheduleItem";
 export default function Schedule(){
     return(
         <div className={"schedule"}>
-            <Header/>
+
             <PageTitleWrap title={"Schedule"}/>
             <div className={"schedule-body"}>
                 <Accordion items={["Day 1", "Day 2", "Day 3"]} selected={1}/>

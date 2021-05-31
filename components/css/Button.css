@@ -74,3 +74,15 @@
     border-radius: 5px;
     font-size: 14px;
 }
+.btn-register-call{
+    background-color: var(--gold);
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+.btn-login{
+    background-color: var(--gold);
+    width: 100%;
+    padding: 10px;
+    color: white;
+}

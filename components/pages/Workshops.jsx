@@ -7,7 +7,7 @@ import "../css/Workshops.css"
 export default function Workshops(){
     return (
         <div>
-            <Header/>
+
             <PageTitleWrap title={"Workshops"}/>
             <div className={"workshops"}>
             <div className="workshop-items">

@@ -27,7 +27,7 @@ function Submission({callback,usertype}){
             <PageTitle title="SUBMISSION"/>
             <div className="submission-body">
                 <div className="submission-text">
-                    Please attach your {usertype==="Researcher"?"Research Presentation":"Workshop Proposal"} below. Please read the guidelines from here, before submitting your paper.
+                    Please attach your {usertype==="Researcher"?"Research Paper":"Workshop Proposal"} below. Please read the guidelines from here, before submitting your paper.
                 </div>
                 <FileUpload callback={selectFile} type={"file"}/>
             </div>

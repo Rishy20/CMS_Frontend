@@ -3,7 +3,7 @@ import Header from "../Header";
 import Hero from "./Hero";
 import "../css/Home.css"
 import AttendeeRegister from "../pages/AttendeeRegister";
-import UserRegister from "../pages/UserRegister";
+import ResearcherRegister from "../pages/ResearcherRegister";
 import Accordion from "../Accordion";
 import RegisterTimer from "../RegisterTimer";
 import EventCount from "./EventCount";
@@ -19,7 +19,6 @@ function Home(){
 
     return (
         <div className={"home"}>
-            <Header/>
             <Hero/>
             <div className="home-body">
                 <div className={"limit-width"}>

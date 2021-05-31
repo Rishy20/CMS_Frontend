@@ -7,7 +7,7 @@ import "../css/Speakers.css"
 export default function Authors() {
     return (
         <div className={"authors"}>
-            <Header/>
+
             <PageTitleWrap title={"Authors"}/>
             <div className="speaker-items">
                 <SpeakerItem/>
