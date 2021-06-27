@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header";
-import "../css/Schedule.css"
+import "../styles/Schedule.css"
 import PageTitleWrap from "../PageTitleWrap";
 import Accordion from "../Accordion";
 import ScheduleItem from "../ScheduleItem";

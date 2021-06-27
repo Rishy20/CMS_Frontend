@@ -1,0 +1,45 @@
+.download-items{
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.download-items .file-icon img.pdf,.submission-items .file-icon img.pdf{
+    width: 75px;
+}
+.download-items .file-icon img,.submission-items .file-icon img{
+    width: 100px;
+}
+
+.download-item{
+    display: flex;
+    width: 450px;
+    padding: 25px;
+}
+.download-item .file-name{
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 0px;
+}
+.download-item .file-detail-container{
+    padding-top: 20px;
+}
+.submission-items .file-icon{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 130px;
+}
+.submission-items .download-item{
+    padding-left: 0;
+    width: auto;
+}
+.submission-items .approval-status{
+    font-weight: 600;
+}
+.submission-items .approval-status.rejected{
+    color: red;
+}
+.submission-items .approval-status.approved{
+    color: #42ad42;
+}

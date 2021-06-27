@@ -1,15 +1,15 @@
 import React from "react";
 import PageTitle from "./PageTitle";
-import "./css/Tickets.css"
+import "./styles/Tickets.css"
 import Button from "./Button";
 import TicketType from "./TicketType";
 import TicketFeatures from "./TicketFeatures";
 import useForm from "./useForm";
 import validate from "./validateInfo";
 
-function Tickets({setTicket}){
+function Tickets({setTicket,back,ticket}){
 
-    const [isSelected,setIsSelected] = React.useState(null);
+    const [isSelected,setIsSelected] = React.useState(ticket);
     const [error, setError] = React.useState(false)
     // const {handleChange, handleSubmit, values, errors } = useForm(detailsEntered,validate,val,url,setValue );
 
@@ -53,7 +53,7 @@ function Tickets({setTicket}){
             <p className="ticket-error">{error?"Please Select a Ticket":''}</p>
             <div className="next-btn">
                 <Button btnStyle="btn-next" name="Next" onclick={handleSelect} />
-                <Button btnStyle="btn-cancel" name="Cancel"/>
+                <Button btnStyle="btn-cancel" name="Cancel" onclick={back}/>
             </div>
 
         </div>

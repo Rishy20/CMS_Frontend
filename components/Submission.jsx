@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import PageTitle from "./PageTitle";
-import "./css/Submission.css"
+import "./styles/Submission.css"
 import FileUpload from "./FileUpload";
 import Button from "./Button";
 function Submission({callback,usertype}){

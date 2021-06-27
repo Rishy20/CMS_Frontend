@@ -29,18 +29,59 @@ const inputs=[
         maxLength: 3
     }
 ]
+
 const style={
-    marginTop:50
+    body:{
+        width:1200,
+        margin:"50px auto"
+    },
+    form:{
+        marginTop:20
+    },
+    total: {
+        fontWeight:600,
+        marginTop: 20,
+        fontSize:20
+    }
+
 }
 function PaymentForm(props){
 
-    const {handleChange,errors,values} = props;
+    const names={
+        chname:'',
+        cnum:'',
+        expiry:'',
+        cvc:'',
+        total:props.total
+    }
+    //Buttons to be displayed in the form
+    const buttons = [
+        {
+            name:"Pay",
+            style:"btn-register",
+            type:"Submit"
+        },
+        {
+            name:"Cancel",
+            style:"btn-cancel",
+
+        },
+    ]
+
+
     return(
         <div>
-            <PageTitle title="PAYMENT INFORMATION"/>
-            <div style={style}>
-                <Form inputs={inputs} names={values} callback={detailsEntered} btns={buttons}/>
 
+            <div style={style.body}>
+                <PageTitle title="PAYMENT INFORMATION"/>
+
+                <div style={style.total}>
+                   Total : Rs.{props.total.toFixed(2)}
+                </div>
+                <div style={style.form}>
+                    <Form inputs={inputs} names={names} callback={props.callback} btns={buttons}/>
+                </div>
+                {props.error?<div className="login-error">{props.error}</div>:null}
             </div>
         </div>
     )

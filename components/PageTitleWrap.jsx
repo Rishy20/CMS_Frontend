@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/PageTitleWrap.css"
+import "./styles/PageTitleWrap.css"
 export default function PageTitleWrap(props){
     return(
         <div className={"page-title-wrap"}>

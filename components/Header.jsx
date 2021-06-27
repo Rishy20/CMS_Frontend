@@ -1,10 +1,13 @@
 import React, {useState} from "react";
 import HeaderItem from "./HeaderItem";
-import "./css/Header.css"
+import "./styles/Header.css"
 import {Link} from "react-router-dom";
 import Dropdown from "./Dropdown";
 const WEBSITE = "ICAF";
 import { useLocation } from 'react-router-dom'
+import {Badge, IconButton, makeStyles} from "@material-ui/core";
+import {Notifications} from "@material-ui/icons";
+import Notification from "./Notifications";
 const authorMenu=[
     {
         title:"All Authors",
@@ -13,6 +16,10 @@ const authorMenu=[
     {
         title:"Call for Papers",
         path:"/authors/callforpaper"
+    },
+    {
+        title:"Research Paper Presentations",
+        path:"/authors/presentations"
     }
 ]
 const workshopMenu=[
@@ -25,9 +32,17 @@ const workshopMenu=[
         path:"/workshops/callforproposal"
     }
 ]
+// Styles for Material UI components
+const useStyles = makeStyles({
+    iconButton: {
+        padding: "8px",
+        marginInline: "4px",
+        color:"white"
+    }
+})
+function Header({loginStatus,logout,...props}){
 
-function Header({loginStatus,logout}){
-
+    const styles = useStyles();
     const [dropDown,setDropDown] = useState({authors:false,workshops:false});
     const onMouseEnter = (link) => {
         setDropDown({...dropDown,[link]:true})
@@ -67,7 +82,9 @@ function Header({loginStatus,logout}){
             <span className="login-links">
                 {loginStatus?(
                     <>
-                    <Link to="/login"><HeaderItem text="My Profile"/></Link>
+                        <Notification/>
+
+                    <Link to="/profile"><HeaderItem text="My Profile"/></Link>
                     <HeaderItem text="Logout" onClick={logout}/>
                     </>
                 ):

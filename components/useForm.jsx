@@ -35,11 +35,13 @@ function useForm(callback,validate,val,url){
         ()=>{
             //Checks if there are no errors and the form is in IsSubmitting state
             if(Object.keys(errors).length === 0 && isSubmitting ){
-                //Callback the submitForm method
-                callback(values);
+
                 // //Submit the form
                 if(url){
                     submitForm();
+                }else{
+                    //Callback the submitForm method
+                    callback(values);
                 }
 
             }

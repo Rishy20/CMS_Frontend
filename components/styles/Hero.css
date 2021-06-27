@@ -21,6 +21,7 @@
     width: 650px;
     font-weight: 600;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 @media (min-width: 1500px) {
     .hero-container > h1{

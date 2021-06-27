@@ -1,14 +1,13 @@
 import React from "react";
-import img from "url:../../public/images/NodeJS.png";
 
-export default function TrackItem(){
+export default function TrackItem(props){
     return(
         <div className="track-item">
             <div className="track-logo">
-                <img src={img} />
+                <img src={`http://localhost:3000/api/v1/tracks/image/${props.img}`} />
             </div>
             <div className="track-name">
-                Node Js
+                {props.name}
             </div>
         </div>
     )

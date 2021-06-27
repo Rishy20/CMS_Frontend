@@ -20,3 +20,19 @@ a{
     padding-top: 75px;
     padding-left: 255px;
 }
+
+.profile-body{
+    padding: 100px 50px;
+    background-color: #f8f8fb;
+    min-height: 80vh;
+}
+.profile-body .makeStyles-buttons-13 {
+    top: 143px;
+    right: 85px;
+    position: absolute;
+}
+
+.link{
+    color: #842029 !important;
+    text-decoration: underline;
+}

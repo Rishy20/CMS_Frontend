@@ -1,0 +1,32 @@
+.keynote{
+    width: 1200px;
+    margin: 50px auto;
+}
+.keynote-item-body{
+    display: flex;
+    margin-bottom: 50px;
+}
+.keynote-item-body:nth-child(even){
+    /*flex-direction: row-reverse;*/
+}
+.keynote-img{
+    width: 150px;
+    border-radius: 50%;
+}
+.keynote-speaker-name{
+    font-weight: 600;
+}
+.keynote-speaker-profession{
+    font-weight: 500;
+}
+.keynote-speaker-details{
+    padding-top: 15px;
+    padding-left: 80px;
+    font-size: 15px;
+    text-align: justify;
+}
+.keynote-speaker{
+    padding: 15px;
+    text-align: center;
+    min-width: 250px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import AccordionItem from "./AccordionItem";
-import "./css/Accordion.css"
+import "./styles/Accordion.css"
 
 function Accordion(props){
     return(

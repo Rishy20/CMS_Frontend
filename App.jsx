@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css'
 import {BrowserRouter as Router, Switch, Route,Redirect} from 'react-router-dom';
 import Home from "./components/Home/Home";
@@ -16,9 +16,17 @@ import Login from "./components/pages/Login";
 import checkLogin from "./components/CheckLogin";
 import Header from "./components/Header";
 import Cookies from "js-cookie";
+import ResearchPaperPresentation from "./components/pages/ResearchPaperPresentation";
+import UserProfile from "./components/pages/UserProfile";
+import {useFetch} from "./components/useFetch";
+import Payment from "./components/pages/Payment";
+import Keynotes from "./components/pages/Keynotes";
+import Contact from "./components/pages/Contact";
+
 
 
 function App(){
+
     //State to maintain login status
     const [loginStatus,setLoginStatus] = useState(checkLogin());
 
@@ -27,19 +35,54 @@ function App(){
         Cookies.remove("token");
         setLoginStatus(false)
     }
-return(
+    let baseUrl = "https://icaf.site/api/v1/";
+
+    // User account data states
+    const [user, setUser] = useState({
+        _id:"",
+        role: "",
+        fname: " ",
+        lname: " ",
+        email: "",
+        contact: "",
+        avatar: ""
+    });
+
+    // User data related app-wide UI states
+    const [avatarSrc, setAvatarSrc] = useState("");
+    const [avatarTxt, setAvatarTxt] = useState(" ");
+
+
+    if(loginStatus) {
+        const role = loginStatus.userType;
+        baseUrl = `https://icaf.site/api/v1/${role}s/`
+        const {loading, data} = useFetch(baseUrl + loginStatus.id);
+
+        // Fetch and set user data using the set API URL
+        useEffect(() => {
+            setUser({role, ...data});
+            // Set user avatar src and fallback text
+            setAvatarSrc(data.avatar && `${baseUrl}image/${data.avatar}`);
+            setAvatarTxt(`${data.fname}${data.lname}`);
+        }, [data]);
+    }
+
+    //Get the fetched Data
+    const  {loading,data} = useFetch("https://icaf.site/api/v1/info");
+
+    return(
     <div className='App'>
         <Router>
             <Header loginStatus={loginStatus} logout={logout}/>
             <Switch>
                 <Route exact path="/">
-                    <Home/>
+                    <Home info={data}/>
                 </Route>
                 <Route exact path="/schedule">
                     <Schedule/>
                 </Route>
                 <Route exact path="/keynotes">
-                    <Home/>
+                    <Keynotes/>
                 </Route>
                 <Route exact path="/authors">
                     <Authors/>
@@ -62,11 +105,34 @@ return(
                 <Route exact path="/authors/register">
                     <ResearcherRegister />
                 </Route>
+                <Route exact path="/authors/presentations">
+                    <ResearchPaperPresentation />
+                </Route>
                 <Route exact path="/workshops/register">
                     <WorkshopRegister />
                 </Route>
                 <Route exact path="/workshops/callforproposal">
                     <CallForProposals />
+                </Route>
+                <Route exact path="/contact">
+                    <Contact />
+                </Route>
+
+                <Route exact path="/author/payment">
+                    <Payment total={data.length>0 && data[0].paperSubmissionAmount} user={user} setUser={setUser}/>
+                </Route>
+                <Route exact path="/profile">
+                    <div className="profile-body">
+                        <UserProfile
+                            login={loginStatus}
+                            baseUrl={baseUrl}
+                            user={user}
+                            setUser={setUser}
+                            avatarSrc={avatarSrc}
+                            avatarTxt={avatarTxt}
+                            isUser={true}
+                        />
+                    </div>
                 </Route>
             </Switch>
             <Footer/>

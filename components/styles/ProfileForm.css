@@ -1,0 +1,5 @@
+.divider {
+    border: 1px var(--lightGrey) solid;
+    margin-block-start: 8px;
+    margin-inline: -16px;
+}

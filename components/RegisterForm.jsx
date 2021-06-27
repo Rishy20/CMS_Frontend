@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/RegisterForm.css";
+import "./styles/RegisterForm.css";
 import PageTitle from "./PageTitle";
 import Form from "./Form";
 
@@ -30,28 +30,15 @@ const inputs=[
         name:"contact"
     },
     {
-        label:"Gender",
-        type:"select",
-        name:"gender",
-        values:["Male","Female","Other"]
+        label:"City",
+        type:"text",
+        name:"city"
     },
     {
-        label:"Age",
+        label:"Country",
         type:"text",
-        name:"age",
-        maxLength:3
-    },
-    {
-        label:"Address",
-        type:"text",
-        name:"address"
-    },
-    {
-        label:"NIC",
-        type:"text",
-        name:"nic",
-        maxLength: 12
-    },
+        name:"country"
+    }
 ]
 //Buttons to be displayed in the form
 const buttons = [
@@ -59,27 +46,30 @@ const buttons = [
         name:"Next",
         style:"btn-next",
         type:"Submit"
-    },
-    {
-        name:"Cancel",
-        style:"btn-cancel",
-    },
+    }
 ]
 //Input box names used in the form so that they can be sent to useForm hook to maintain the state
 const names={
     fname:'',
     lname:'',
-    gender:'',
     email:'',
     contact:'',
-    address:'',
-    age:'',
-    nic:'',
+    city:'',
+    country:''
 }
 
-function RegisterForm({detailsEntered}){
+function RegisterForm({detailsEntered,values}){
 
 
+    if(Object.keys(values).length > 0){
+        Object.keys(values).map(v=>{
+            names[v]= values[v];
+        })
+    }else{
+        Object.keys(names).map(n=>{
+            names[n]=''
+        })
+    }
 
     return(
 

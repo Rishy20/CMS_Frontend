@@ -9,7 +9,7 @@ const checkLogin = () => {
 
         if (isAuth) {
             let decoded = jwt_decode(Cookies.get("token"));
-            return decoded.userType;
+            return {id:decoded.id,userType:decoded.userType};
         } else {
             return false;
         }

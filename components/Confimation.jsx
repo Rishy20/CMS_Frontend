@@ -1,6 +1,6 @@
 import React from "react";
 import PageTitle from "./PageTitle";
-import "./css/Confirmation.css"
+import "./styles/Confirmation.css"
 import Grid from "@material-ui/core/Grid";
 
 import Form from "./Form";
@@ -32,18 +32,7 @@ const inputs=[
     }
 ]
 
-//Buttons to be displayed in the form
-const buttons = [
-    {
-        name:"Register",
-        style:"btn-register",
-        type:"Submit"
-    },
-    {
-        name:"Cancel",
-        style:"btn-cancel",
-    },
-]
+
 //Details to be displayed in confirmation section
 const confirmationItems=[
     {
@@ -63,20 +52,12 @@ const confirmationItems=[
         value:"contact"
     },
     {
-        name:"Age",
-        value:"age"
+        name:"City",
+        value:"city"
     },
     {
-        name:"Gender",
-        value:"gender"
-    },
-    {
-        name:"NIC",
-        value:"nic"
-    },
-    {
-        name:"Address",
-        value:"address"
+        name:"Country",
+        value:"country"
     },
     {
         name:"Ticket",
@@ -84,10 +65,10 @@ const confirmationItems=[
     },
 ]
 //Form Submit Url
-const url = "http://localhost:3000/api/v1/researchers";
+const url = "http://localhost:3000/api/v1/attendees";
 function Confirmation(props){
 
-    const {details,submitForm} = props;
+    const {details,submitForm,back} = props;
     const names={
         ...details,
         chname:'',
@@ -95,6 +76,21 @@ function Confirmation(props){
         expiry:'',
         cvc:''
     }
+
+    //Buttons to be displayed in the form
+    const buttons = [
+        {
+            name:"Register",
+            style:"btn-register",
+            type:"Submit"
+        },
+        {
+            name:"Cancel",
+            style:"btn-cancel",
+            onclick:back
+        },
+    ]
+
 
     return(
         <div className="confirmation">

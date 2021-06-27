@@ -1,6 +1,6 @@
 import React from "react"
 import {useState, useRef} from "react";
-import "./css/FileUpload.css";
+import "./styles/FileUpload.css";
 const DEFAULT_MAX_FILE_SIZE = 8388608;
 
 import pdf from 'url:../public/images/pdf.png';

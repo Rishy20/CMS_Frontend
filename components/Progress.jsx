@@ -1,5 +1,5 @@
 import React from "react";
-import './css/Progress.css'
+import './styles/Progress.css'
 const Registration = "Registration"
 function Progress(props){
     let count = 1;

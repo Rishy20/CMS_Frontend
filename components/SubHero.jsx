@@ -2,7 +2,8 @@ import React from "react";
 import './SubHero.css'
 import Grid from "@material-ui/core/Grid";
 const about = "ICAF is an academic  conference organized by SLIIT, where industry researchers will present their findings and implementations of different programming languages including Java, JavaScript, Python etc."
-function SubHero(){
+function SubHero({data,date}){
+    const location = data.location ? data.location.split(","):[];
     return(
         <div className="sub-hero-container">
             <Grid container spacing={3} justify="center">
@@ -12,7 +13,7 @@ function SubHero(){
                         About the Event
                     </div>
                     <div className="sub-hero-description">
-                        {about}
+                        {data.shortDescription}
                     </div>
                 </Grid>
                 <Grid item md={4} className="hero-grid">
@@ -20,9 +21,10 @@ function SubHero(){
                         WHERE
                     </div>
                     <div className="sub-hero-description">
-                        Main Auditorium, <br/>
-                        Sri Lanka Institute of Information Technology, <br/>
-                        Malabe
+
+                        {location[0]}, <br/>
+                        {location[1]}, <br/>
+                        {location[2]}
                     </div>
                 </Grid>
                 <Grid item md={4} className="hero-grid">
@@ -30,8 +32,8 @@ function SubHero(){
                         WHEN
                     </div>
                     <div className="sub-hero-description">
-                        Sunday 28th June, <br/>
-                        from 8:00 am to 4:00 pm
+                        {date}, <br/>
+                        from {data.startTime} to {data.endTime}
                     </div>
                 </Grid>
             </Grid>

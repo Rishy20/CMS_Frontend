@@ -1,13 +1,13 @@
 import React from "react";
-import img from "url:../../public/images/IMG_0550.jpg"
-function SpeakerItem(){
+
+function SpeakerItem(props){
 
     return(
         <div className="speaker-item">
-            <img className="speaker-item-img" src={img} />
-            <h3 className="speaker-item-name">Rishard Akram</h3>
-            <h4 className="speaker-item-profession">Software Engineer</h4>
-            <h4 className="speaker-item-company">WSO2, Sri Lanka</h4>
+            <img className="speaker-item-img" src={props.img} />
+            <h3 className="speaker-item-name">{props.name}</h3>
+            <h4 className="speaker-item-profession">{props.job}</h4>
+            <h4 className="speaker-item-company">{props.company}, {props.country}</h4>
         </div>
     )
 }

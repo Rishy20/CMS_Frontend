@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/Input.css'
+import './styles/Input.css'
 
 
 //Input box with label

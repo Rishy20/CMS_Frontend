@@ -3,20 +3,24 @@ import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
 import SpeakerItem from "../Home/SpeakerItem";
 import WorkShopItem from "../Home/WorkShopItem";
-import "../css/Workshops.css"
+import "../styles/Workshops.css"
+import {useFetch} from "../useFetch";
 export default function Workshops(){
+
+    const {data} = useFetch("http://localhost:3000/api/v1/workshops/approved");
+
     return (
         <div>
 
             <PageTitleWrap title={"Workshops"}/>
             <div className={"workshops"}>
             <div className="workshop-items">
-                <WorkShopItem/>
-                <WorkShopItem/>
-                <WorkShopItem/>
-                <WorkShopItem/>
-                <WorkShopItem/>
-                <WorkShopItem/>
+                {
+                    data.map(workshop=>{
+                        return <WorkShopItem name={workshop.workshopName} presenter={workshop.presentersName} job={workshop.jobTitle} company={workshop.company} img={workshop.avatar}/>
+                    })
+                }
+
             </div>
             </div>
         </div>

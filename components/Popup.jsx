@@ -1,6 +1,7 @@
 import React, {useState} from "react";
-import "./css/Popup.css"
+import "./styles/Popup.css"
 import success from "url:../public/images/checked.png"
+import error from "url:../public/images/cancel.png"
 import Button from "./Button";
 import {Redirect} from "react-router-dom";
 export default function Popup(props){
@@ -10,9 +11,11 @@ export default function Popup(props){
     function hidePopup(){
         props.redirect && setRedirect(true);
         setDisplayPopup(false);
-
-        // props.callback();
+        if (!props.redirect){
+            props.toggle();
+        }
     }
+
     return(
         <>
             {displayPopup &&
@@ -20,8 +23,10 @@ export default function Popup(props){
 
                 <div className={"popup-container"}>
                     <div className={"popup-header"}>
-                        <img src={success}/>
-                        Congratulations!
+                        <img src={props.error?error:success}/>
+                        {
+                            props.error?"Error":"Congratulations!"
+                        }
                     </div>
                     <div className={"popup-body"}>
                         {props.message}

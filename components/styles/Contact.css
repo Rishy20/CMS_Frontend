@@ -1,0 +1,26 @@
+.contact-body{
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.contact-item{
+    padding: 60px 20px;
+    width: 400px;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    border-right: 2px solid #e2e2e2;
+}
+.contact-item:last-child{
+    border-right: none;
+}
+.contact-item-body{
+    padding-top: 15px;
+}
+.contact-item-heading{
+    font-weight: 600;
+    font-size: 20px;
+}

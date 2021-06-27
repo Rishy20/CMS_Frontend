@@ -5,9 +5,10 @@ import useForm from "../useForm";
 import PageTitle from "../PageTitle";
 import Input from "../Input";
 import Button from "../Button";
-import "../css/Login.css"
+import "../styles/Login.css"
 import validate from "../validateInfo";
 import Cookies from "js-cookie";
+import checkLogin from "../CheckLogin";
 
 const names={
     email:'',
@@ -28,10 +29,8 @@ export default function Login({setLogin}){
 
         //Check if login is successful
         if(data.auth){
-            userType = data.usertype;
-            setLogin(userType);
-
             Cookies.set("token",data.token,{ expires: 1 });
+            setLogin(checkLogin());
             setIsSubmitted(true);
         }else{
             setMessage(data.message)
@@ -39,7 +38,6 @@ export default function Login({setLogin}){
     }
     return(
             <div>
-
                 <PageTitleWrap title={"Login"}/>
                 <div className={"login-body-container"}>
                     <div className="user-login-body">

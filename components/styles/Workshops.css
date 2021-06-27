@@ -1,7 +1,7 @@
-.workshops{
+.workshops,.presentations{
     margin-top: 50px;
 }
-.workshop-items{
+.workshop-items, .presentation-items{
     margin-top: 20px;
     margin-bottom: 20px;
 }

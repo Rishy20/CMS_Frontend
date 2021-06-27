@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import "./css/RegisterForm.css";
+import "./styles/RegisterForm.css";
 import PageTitle from "./PageTitle";
 import Form from "./Form";
 import FileUpload from "./FileUpload";
