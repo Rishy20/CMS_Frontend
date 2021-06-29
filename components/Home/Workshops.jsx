@@ -18,7 +18,14 @@ export default function Workshops(){
                         <div className="workshop-items">
                             {
                                 data && data.map(workshop=>{
-                                    return <WorkShopItem name={workshop.workshopName} presenter={workshop.presentersName} job={workshop.jobTitle} company={workshop.company} img={workshop.avatar}/>
+                                    return <WorkShopItem
+                                        name={workshop.workshopName}
+                                        presenter={workshop.presentersName}
+                                        job={workshop.jobTitle}
+                                        company={workshop.company}
+                                        img={workshop.avatar}
+                                        type={"workshops"}
+                                    />
                                 })
                             }
                         </div>

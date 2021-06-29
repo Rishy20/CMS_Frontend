@@ -3,55 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/AvatarSelector.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/AvatarSelector.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChangePassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChangePassword.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FileUpload.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FileUpload.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/EventCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/EventCount.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Speakers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Speakers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Sponsor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Sponsor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/TrackItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/TrackItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Tracks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Tracks.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/KeynoteItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/KeynoteItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Notifications.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Notifications.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Schedule/Schedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Schedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ScheduleDay.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScheduleDay.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SubHero.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/SubHero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SubHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SubHero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Submission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Submission.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Tickets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tickets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Topbar.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserConfirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserConfirmation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Authors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Authors.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Downloads.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Downloads.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Keynotes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Keynotes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Payment.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Payment.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Test.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/UserLogin.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/UserProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/dashboard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/HeaderItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/HeaderItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.63f10152.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.63f10152.js.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +131,7 @@
       <workItem from="1624799107571" duration="41248000" />
       <workItem from="1624951795636" duration="10467000" />
       <workItem from="1624975057247" duration="3627000" />
-      <workItem from="1624981103294" duration="15603000" />
+      <workItem from="1624981103294" duration="17119000" />
     </task>
     <servers />
   </component>

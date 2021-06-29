@@ -26,6 +26,7 @@ export default function PaperPresentations(){
                                             job={researcher.jobTitle}
                                             company={researcher.company}
                                             img={researcher.avatar}
+                                            type={"researchers"}
                                         />
                                     })
                                 }

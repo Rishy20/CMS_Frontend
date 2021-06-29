@@ -48,6 +48,11 @@ const inputs=[
         name:"confirmPassword"
     },
     {
+        label:"Research Title",
+        type:"text",
+        name:"researchTitle"
+    },
+    {
         label:"Job Title",
         type:"text",
         name:"jobTitle"
@@ -89,6 +94,7 @@ const names={
     password:'',
     confirmPassword:'',
     country:'',
+    researchTitle:'',
     jobTitle:'',
     company:'',
     bio:'',
@@ -111,6 +117,10 @@ const confirmationItems=[
     {
         name: "Image",
         value: "img"
+    },
+    {
+        name:"Research Title",
+        value:"researchTitle"
     },
     {
         name:"Contact",

@@ -24,6 +24,7 @@ export default function Workshops(){
                             company={workshop.company}
                             img={workshop.avatar}
                             key={workshop._id}
+                            type={"workshops"}
                         />
                     })
                 }

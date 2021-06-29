@@ -20,6 +20,7 @@ export default function ResearchPaperPresentation(){
                                 job={researcher.jobTitle}
                                 company={researcher.company}
                                 img={researcher.avatar}
+                                type={"researchers"}
                             />
                         })
                     }
