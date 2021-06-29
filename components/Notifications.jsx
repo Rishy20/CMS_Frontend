@@ -16,9 +16,7 @@ const useStyles = makeStyles({
         backgroundColor:"#E2BC7F"
     }
 })
-
-
-export default function Notification(props){
+export default function Notification({userId}){
 
     const styles = useStyles();
 
@@ -28,24 +26,26 @@ export default function Notification(props){
 
     async function getData(){
 
-        //Fetch Notifications
-        await fetch("http://localhost:3000/api/v1/notification/60bbc4e976a0fb0cd4ddd36f")
-            .then(res=>res.json())
-            .then(data=>setNotifications(data.notifications.reverse()))
-            .catch(err=>console.log(err));
+        if(userId) {
+            //Fetch Notifications
+            await fetch(`https://icaf.site/api/v1/notification/${userId}`)
+                .then(res => res.json())
+                .then(data => setNotifications(data.notifications.reverse()))
+                .catch(err => console.log(err));
 
-        //Fetch Notification Count
-        await fetch("http://localhost:3000/api/v1/notification/count/60bbc4e976a0fb0cd4ddd36f")
-            .then(res=>res.json())
-            .then(data=>setCount(data))
-            .catch(err=>console.log(err));
+            //Fetch Notification Count
+            await fetch(`https://icaf.site/api/v1/notification/count/${userId}`)
+                .then(res => res.json())
+                .then(data => setCount(data))
+                .catch(err => console.log(err));
+        }
     }
 
         useEffect(()=>{
-            getData();
+            getData()
            const interval = setInterval(()=>{
                getData()
-           },10000);
+           },5000);
             return ()=>clearInterval(interval);
         },[])
 
@@ -55,14 +55,14 @@ export default function Notification(props){
 
         if(count!=0 && !isVisible){
 
-            fetch("http://localhost:3000/api/v1/notification",{
+            fetch("https://icaf.site/api/v1/notification",{
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
                 method:"PUT",
                 body:JSON.stringify({
-                        userId:"60bbc4e976a0fb0cd4ddd36f"
+                        userId:`${userId}`
                     }
                 )
             }).then(res => res.json())
@@ -104,7 +104,8 @@ export default function Notification(props){
                                          return <Link to={"/author/payment"}>
                                               <NotificationItem title={notification.title}
                                                                 message={notification.message}
-                                                                time={notification.createdAt} key={notification.title}/>
+                                                                time={notification.createdAt}
+                                                                key={notification.title}/>
                                           </Link>
                                       }else
                                           return <NotificationItem title={notification.title} message={notification.message} time={notification.createdAt} key={notification.title} />

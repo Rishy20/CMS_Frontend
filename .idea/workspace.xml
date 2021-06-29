@@ -2,27 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/KeynoteItem.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Accordion.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Accordion.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CheckLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CheckLogin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ChangePassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChangePassword.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/DownloadItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DownloadItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Dropdown.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Dropdown.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FileUpload.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FileUpload.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Form.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Form.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Formbox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Formbox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ConfirmationItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ConfirmationItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/EventCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/EventCount.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/SpeakerItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SpeakerItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Speakers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Speakers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Sponsor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Sponsor.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/TrackItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/TrackItem.jsx" afterDir="false" />
@@ -30,68 +18,35 @@
       <change beforePath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Workshops.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PageTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PageTitle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PageTitleWrap.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PageTitleWrap.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PaymentForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PaymentForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Popup.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Popup.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Progress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Progress.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Radio.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Radio.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/KeynoteItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/KeynoteItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Notifications.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Notifications.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProfileForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProfileForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/RegisterTimer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterTimer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Schedule/Schedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Schedule/Schedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Select.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SubHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/SubHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ScheduleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScheduleItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Submission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Submission.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TextBox.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TextBox.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TicketType.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TicketType.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Tickets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tickets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Topbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Topbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/UserConfirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserConfirmation.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/UserRegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserRegisterForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Accordion.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Accordion.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Confirmation.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Confirmation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Downloads.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Downloads.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Dropdown.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/EventCount.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/EventCount.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/FileUpload.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/FileUpload.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Formbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Formbox.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/HeaderItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/HeaderItem.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Hero.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Input.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/PageTitle.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/PageTitle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/PageTitleWrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/PageTitleWrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Popup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Progress.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Progress.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Radio.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Radio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/RegisterForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/RegisterForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/RegisterTimer.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/RegisterTimer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Schedule.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Schedule.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Select.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Select.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Speakers.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Speakers.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Sponsors.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Sponsors.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Submission.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Submission.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Tickets.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Tickets.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Topbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Tracks.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Tracks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/UserLogin.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/UserLogin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/css/Workshops.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Workshops.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/Authors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Authors.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/Downloads.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Downloads.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Keynotes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Keynotes.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/UserLogin.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/UserLogin.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/UserProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/useForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/useForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles/Notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Notification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles/Schedule.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Schedule.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles/Tickets.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Tickets.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +145,7 @@
       <workItem from="1623317462605" duration="2406000" />
       <workItem from="1623448934298" duration="4745000" />
       <workItem from="1624635588937" duration="13413000" />
+      <workItem from="1624799107571" duration="40552000" />
     </task>
     <servers />
   </component>

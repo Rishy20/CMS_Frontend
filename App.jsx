@@ -53,19 +53,23 @@ function App(){
     const [avatarTxt, setAvatarTxt] = useState(" ");
 
 
-    if(loginStatus) {
         const role = loginStatus.userType;
         baseUrl = `https://icaf.site/api/v1/${role}s/`
-        const {loading, data} = useFetch(baseUrl + loginStatus.id);
 
         // Fetch and set user data using the set API URL
         useEffect(() => {
-            setUser({role, ...data});
-            // Set user avatar src and fallback text
-            setAvatarSrc(data.avatar && `${baseUrl}image/${data.avatar}`);
-            setAvatarTxt(`${data.fname}${data.lname}`);
-        }, [data]);
-    }
+            fetch(baseUrl + loginStatus.id)
+                .then(res=>res.json())
+                .then(data=>{
+                    setUser({role, ...data});
+
+                    // Set user avatar src and fallback text
+                    setAvatarSrc(data.avatar && `${baseUrl}image/${data.avatar}`);
+                    setAvatarTxt(`${data.fname}${data.lname}`);
+                })
+                .catch(err=>console.log(err));
+        }, []);
+
 
     //Get the fetched Data
     const  {loading,data} = useFetch("https://icaf.site/api/v1/info");
@@ -73,13 +77,14 @@ function App(){
     return(
     <div className='App'>
         <Router>
-            <Header loginStatus={loginStatus} logout={logout}/>
+
+            <Header loginStatus={loginStatus} logout={logout} userId={loginStatus.id}/>
             <Switch>
                 <Route exact path="/">
                     <Home info={data}/>
                 </Route>
                 <Route exact path="/schedule">
-                    <Schedule/>
+                    <Schedule info={data}/>
                 </Route>
                 <Route exact path="/keynotes">
                     <Keynotes/>

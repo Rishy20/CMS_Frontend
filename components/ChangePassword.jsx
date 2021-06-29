@@ -2,8 +2,8 @@ import React, {useEffect, useState} from "react";
 import validate from "./validateInfo";
 import Grid from "@material-ui/core/Grid";
 import Input from "./Input";
-import {CircularProgress, IconButton} from "@material-ui/core";
-import {Done, Visibility, VisibilityOff} from "@material-ui/icons";
+import {CircularProgress} from "@material-ui/core";
+import {Done} from "@material-ui/icons";
 import Button from "./Button";
 
 const inputs = [
@@ -18,7 +18,7 @@ const ERR_MSG_SAVE = "Something went wrong. Please try again...";
 
 const ChangePassword = props => {
     // Destructure props
-    const {styles, user, baseUrl, setSubmitError} = props;
+    const {styles, user, baseUrl, baseUserUrl, setSubmitError} = props;
 
     // Form states
     const [values, setValues] = useState({currentPassword: "", password: "", confirmPassword: ""});
@@ -37,11 +37,6 @@ const ChangePassword = props => {
         const {name, value} = event.target;
         setValues({...values, [name]: value});
     };
-
-    // Handle show password toggle
-    const handleShowPassword = name => {
-        setShowPassword({...showPassword, [name]: !showPassword[name]});
-    }
 
     // Handle authenticating with current password
     const handleAuthenticate = event => {
@@ -66,8 +61,8 @@ const ChangePassword = props => {
     // Authenticate password change with current password
     const authenticate = () => {
         const data = {email: user.email, password: values.currentPassword}
-
-        fetch("https://icaf.site/api/v1/login/admin", {
+        console.log(data)
+        fetch(`https://icaf.site/api/v1/login`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -110,7 +105,7 @@ const ChangePassword = props => {
     // Validate and submit form if no errors were found
     useEffect(() => {
             if(Object.keys(errors).length === 0 && isSubmitting ) {
-                if (baseUrl) {
+                if (baseUserUrl) {
                     submitForm();
                 }
             } else {
@@ -127,9 +122,9 @@ const ChangePassword = props => {
         const data = new FormData();
         // Add input values and the avatar
         data.append("values", JSON.stringify(submitData));
-
+        console.log(`${baseUrl}${user._id}`)
         // Send PUT request to update user data and upload the avatar
-        fetch(baseUrl + user._id, {
+        fetch(`${baseUrl}${user._id}`, {
             method: "PUT",
             body: data
         }).then(res => res.json())
@@ -191,31 +186,21 @@ const ChangePassword = props => {
                                 />
                             </Grid>
 
-                            {/* Show password icon */}
-                            <IconButton
-                                size="small"
-                                onClick={() => handleShowPassword(input.name)}
-                                className={styles.showPassBtn}
-                                style={errors[input.name] ? {marginBlockStart: "-20px"} : {}}
-                            >
-                                {showPassword[input.name] ? <VisibilityOff /> : <Visibility />}
-                            </IconButton>
-
                             {/* Authenticating progress indicator */}
                             {input.name === "currentPassword" && isAuthenticating &&
-                                <CircularProgress
-                                    size={"2.2em"}
-                                    className={styles.progress}
-                                    style={{marginInlineStart: "16px", marginBlockStart: "-2px"}}
-                                />
+                            <CircularProgress
+                                size={"2.2em"}
+                                className={styles.progress}
+                                style={{marginInlineStart: "-4px", marginBlockStart: "-2px"}}
+                            />
                             }
 
                             {/* Authenticated status indicator */}
                             {(input.name === "currentPassword" && authenticated) &&
-                                <Done
-                                    className={styles.success}
-                                    style={{marginInlineStart: "16px", marginBlockStart: "-2px"}}
-                                />
+                            <Done
+                                className={styles.success}
+                                style={{marginInlineStart: "-4px", marginBlockStart: "-2px"}}
+                            />
                             }
                         </Grid>
                     )
@@ -228,13 +213,6 @@ const ChangePassword = props => {
                 {/* Submit success indicator */}
                 {submitSuccess && <Done className={styles.success} />}
 
-                {/* Save button */}
-                {authenticated && <Button
-                    btnStyle="btn-save"
-                    name="Save Changes"
-                    type="submit"
-                    disabled={isSubmitting}
-                />}
                 {/* Edit/Cancel button | This button toggles the edit mode */}
                 <Button
                     btnStyle={"btn-cancel"}
@@ -242,6 +220,14 @@ const ChangePassword = props => {
                     onclick={handleAuthenticate}
                     disabled={isAuthenticating || isSubmitting}
                 />
+                {/* Save button */}
+                {authenticated && <Button
+                    btnStyle="btn-save"
+                    name="Save Changes"
+                    type="submit"
+                    onclick={submitForm}
+                    disabled={isSubmitting}
+                />}
             </div>
         </form>
     );

@@ -33,6 +33,7 @@
 }
 .notification-item-body{
     padding: 0px 15px;
+    width: 320px;
 }
 .notification-item{
     display: flex;

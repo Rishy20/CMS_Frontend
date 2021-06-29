@@ -40,7 +40,7 @@ const useStyles = makeStyles({
         color:"white"
     }
 })
-function Header({loginStatus,logout,...props}){
+function Header({loginStatus,logout,userId,...props}){
 
     const styles = useStyles();
     const [dropDown,setDropDown] = useState({authors:false,workshops:false});
@@ -52,6 +52,7 @@ function Header({loginStatus,logout,...props}){
         setDropDown({...dropDown,[link]:false})
     };
     const location = useLocation();
+
 
     return(
         <div className={`header ${location.pathname==="/"?"transparent":null}`}>
@@ -68,6 +69,7 @@ function Header({loginStatus,logout,...props}){
                         {dropDown.authors && <Dropdown MenuItems={authorMenu}/> }
                     </Link>
                 </li>
+                <li><Link to="/downloads"><HeaderItem text="Downloads"/></Link></li>
 
                  <li onMouseEnter={()=>{onMouseEnter("workshops")}} onMouseLeave={()=>{onMouseLeave("workshops")}}>
                     <Link  to="/workshops" >
@@ -75,14 +77,13 @@ function Header({loginStatus,logout,...props}){
                         {dropDown.workshops && <Dropdown MenuItems={workshopMenu}/> }
                     </Link>
                 </li>
-                <li><Link to="/downloads"><HeaderItem text="Downloads"/></Link></li>
                 <li><Link to="/contact"><HeaderItem text="Contact Us"/></Link></li>
 
             </span>
             <span className="login-links">
                 {loginStatus?(
                     <>
-                        <Notification/>
+                        <Notification userId={userId}/>
 
                     <Link to="/profile"><HeaderItem text="My Profile"/></Link>
                     <HeaderItem text="Logout" onClick={logout}/>

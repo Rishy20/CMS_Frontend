@@ -2,28 +2,11 @@ import React from "react";
 import PageTitle from "./PageTitle";
 import "./styles/Confirmation.css"
 import Grid from "@material-ui/core/Grid";
-
-import Form from "./Form";
 import ConfirmationItem from "./ConfirmationItem";
 import Button from "./Button";
 
-
-
-//Buttons to be displayed in the form
-const buttons = [
-    {
-        name:"Confirm",
-        style:"btn-register",
-        type:"Submit"
-    },
-    {
-        name:"Cancel",
-        style:"btn-cancel",
-    },
-]
-
 //Form Submit Url
-const url = "http://localhost:3000/api/v1/researchers";
+const url = "https://icaf.site/api/v1/researchers";
 function UserConfirmation(props){
 
     const {details,submitForm} = props;
@@ -33,9 +16,7 @@ function UserConfirmation(props){
         <div className="confirmation">
             <PageTitle title="CONFIRMATION"/>
             <div className="confirmation-body">
-
                 <Grid container spacing={2}  justify="space-around">
-
                     {
                         confirmationItems.map(ci=>{
                             return <ConfirmationItem name={ci.name} value={details[ci.value]} key={ci.name}/>
@@ -53,4 +34,3 @@ function UserConfirmation(props){
     )
 }
 export default UserConfirmation;
-

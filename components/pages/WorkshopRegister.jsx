@@ -12,7 +12,7 @@ import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
 import Popup from "../Popup";
 
-const url = "http://localhost:3000/api/v1/workshops";
+const url = "https://icaf.site/api/v1/workshops";
 
 
 //Inputs stored as an array so they can be mapped to Input component

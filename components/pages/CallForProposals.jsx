@@ -21,7 +21,7 @@ const btnContainer={
 }
 
 export default function CallForProposals(){
-    const {data} = useFetch("http://localhost:3000/api/v1/pages/callforproposals")
+    const {data} = useFetch("https://icaf.site/api/v1/pages/callforproposals")
     return(
         <div>
 

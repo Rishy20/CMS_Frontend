@@ -7,7 +7,7 @@ import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
 export default function Workshops(){
 
-    const {data} = useFetch("http://localhost:3000/api/v1/workshops/approved");
+    const {data} = useFetch("https://icaf.site/api/v1/workshops/approved");
 
     return (
         <div>
@@ -17,7 +17,14 @@ export default function Workshops(){
             <div className="workshop-items">
                 {
                     data.map(workshop=>{
-                        return <WorkShopItem name={workshop.workshopName} presenter={workshop.presentersName} job={workshop.jobTitle} company={workshop.company} img={workshop.avatar}/>
+                        return <WorkShopItem
+                            name={workshop.workshopName}
+                            presenter={workshop.presentersName}
+                            job={workshop.jobTitle}
+                            company={workshop.company}
+                            img={workshop.avatar}
+                            key={workshop._id}
+                        />
                     })
                 }
 

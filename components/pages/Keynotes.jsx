@@ -6,14 +6,21 @@ import KeynoteItem from "../KeynoteItem";
 import {useFetch} from "../useFetch";
 
 export default function Keynotes(props){
-    const {data} = useFetch("http://localhost:3000/api/v1/keynotes");
+    const {data} = useFetch("https://icaf.site/api/v1/keynotes");
     return(
         <div>
             <PageTitleWrap title={"Keynotes"}/>
         <div className={"keynote"}>
             {
                 data.length > 0 && data.map(keynote=>{
-                    return <KeynoteItem name = {keynote.fname + " " + keynote.lname} job={keynote.jobTitle} company={keynote.company} bio={keynote.bio} img={keynote.img}/>
+                    return <KeynoteItem
+                        key={keynote._id}
+                        name = {keynote.fname + " " + keynote.lname}
+                        job={keynote.jobTitle}
+                        company={keynote.company}
+                        bio={keynote.bio}
+                        img={keynote.img}
+                    />
                 })
             }
         </div>

@@ -1,7 +1,4 @@
 import React from 'react';
-import Header from "../Header";
-import Hero from "../Home/Hero"
-import Accordion from "../Accordion";
 import RegisterForm from "../RegisterForm";
 import {useState} from "react";
 import Progress from "../Progress";

@@ -1,17 +1,17 @@
 import React from "react";
 
-export default function ScheduleItem(){
+export default function ScheduleItem(props){
 
     return(
         <div className={"schedule-item-container"}>
             <div className={"schedule-time"}>
-                10:00
+                {props.startTime}
             </div>
             <div className="schedule-item">
-                <div className="schedule-heading">Vue Workshop</div>
-                <div className="schedule-speaker">Rishard, WSO2</div>
-                <div className="schedule-item-tag">Workshop</div>
-                <div className="schedule-item-time-tag">30 mins</div>
+                <div className="schedule-heading">{props.event}</div>
+                <div className="schedule-speaker">{props.speaker}, {props.company}</div>
+                <div className="schedule-item-tag">{props.eventType}</div>
+                <div className="schedule-item-time-tag">{props.duration}</div>
             </div>
         </div>
     )

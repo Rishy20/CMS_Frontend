@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import "./styles/RegisterForm.css";
 import PageTitle from "./PageTitle";
 import Form from "./Form";
-import FileUpload from "./FileUpload";
-
 
 
 function UserRegisterForm({detailsEntered,inputs,names,btns}){

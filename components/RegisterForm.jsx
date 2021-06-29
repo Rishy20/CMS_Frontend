@@ -5,7 +5,7 @@ import Form from "./Form";
 
 
 //Form Submit Url
-const url = "http://localhost:3000/api/v1/researchers";
+const url = "https://icaf.site/api/v1/researchers";
 
 //Inputs stored as an array so they can be mapped to Input component
 const inputs=[

@@ -6,7 +6,7 @@ import {useFetch} from "../useFetch";
 import TrackItem from "./TrackItem";
 
 export default function Sponsor(){
-    const {data} = useFetch("http://localhost:3000/api/v1/sponsors");
+    const {data} = useFetch("https://icaf.site/api/v1/sponsors");
     return(
         <div className="sponsors">
                 <SubTitle text="Powered By" />
@@ -15,7 +15,10 @@ export default function Sponsor(){
                     {
                         data &&
                         data.map(d=>{
-                            return <img src={`http://localhost:3000/api/v1/sponsors/image/${d.image}`} />
+                            return <img
+                                src={`https://icaf.site/api/v1/sponsors/image/${d.image}`}
+                                key={d._id}
+                            />
                         })
                     }
                 </div>

@@ -6,7 +6,7 @@ import Button from "../Button";
 import {useFetch} from "../useFetch";
 
 export default function Workshops(){
-    const {data} = useFetch("http://localhost:3000/api/v1/workshops/approved");
+    const {data} = useFetch("https://icaf.site/api/v1/workshops/approved");
 
     return(
         <div className="workshops">

@@ -12,7 +12,7 @@ import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
 import Popup from "../Popup";
 
-const url = "http://localhost:3000/api/v1/researchers";
+const url = "https://icaf.site/api/v1/researchers";
 
 
 //Inputs stored as an array so they can be mapped to Input component
@@ -61,11 +61,6 @@ const inputs=[
         label:"Country",
         type:"text",
         name:"country",
-    },
-    {
-        label:"Brief Bio about your self",
-        type:"textbox",
-        name:"bio",
     },
     {
         label:"Upload your Profile Image",

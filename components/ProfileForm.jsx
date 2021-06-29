@@ -26,8 +26,8 @@ const useStyles = makeStyles({
     },
     buttons: {
         position: "absolute",
-        top: 130,
-        right: 36,
+        top: 142,
+        right: 85,
     },
     progress: {
         color: "#E2BC7F",

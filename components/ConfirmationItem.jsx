@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@material-ui/core/Grid";
 
 export default function ConfirmationItem(props){
+
     return(
 
         <Grid item xs={12} md={6} >

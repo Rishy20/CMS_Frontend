@@ -101,7 +101,6 @@ const UserProfile = ({baseUrl, user, setUser, ...props}) => {
                                 <Typography
                                     variant="body1"
                                     classes={{body1: styles.payment}}>
-
                                     Congratulations! your review paper has been approved. Please click <Link to={"/author/payment"} className={"link"}>here</Link> to make the payment to complete your submission
                                 </Typography>
 

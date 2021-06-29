@@ -30,7 +30,7 @@ function Home({info}){
                 <div className="intro-body">
                     {info.length>0 && info[0].description}
                 </div>
-                <EventCount/>
+                <EventCount info={info}/>
                 <RegisterTimer start={info.length>0 && info[0].startDate}/>
                 </div>
                 <Speakers/>

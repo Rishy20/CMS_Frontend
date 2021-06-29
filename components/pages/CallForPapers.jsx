@@ -7,11 +7,6 @@ import Button from "../Button";
 import {Link} from "react-router-dom";
 import {useFetch} from "../useFetch";
 
-
-
-
-
-
 const style={
     width:1200,
     margin:"50px auto",
@@ -24,7 +19,7 @@ const btnContainer={
 
 export default function CallForPapers(){
 
-    const {data} = useFetch("http://localhost:3000/api/v1/pages/callforpapers")
+    const {data} = useFetch("https://icaf.site/api/v1/pages/callforpapers")
 
     return(
         <div>

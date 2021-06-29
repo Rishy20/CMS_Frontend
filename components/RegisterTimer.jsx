@@ -3,14 +3,6 @@ import "./styles/RegisterTimer.css"
 import moment from "moment";
 export default function RegisterTimer({start}){
 
-    // const date = moment();
-    // let startDate = new moment(start)
-    // let duration = moment.duration(date.diff(startDate));
-    // let days = Math.floor(duration.asDays());
-    // let hours= duration.hours();
-    // let minutes = duration.minutes();
-    // let seconds = duration.seconds();
-    // console.log(`${days} ${hours} ${minutes} ${seconds}`)
 
 
     const calculateTimeLeft = () => {

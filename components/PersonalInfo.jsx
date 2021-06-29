@@ -21,7 +21,7 @@ const ERR_MSG = "Failed to save changes. Please try again...";
 const PersonalInfo = props => {
     // Destructure props
     const {styles, user, setUser, baseUrl, avatarSrc, avatarTxt, setSubmitError} = props;
-
+    console.log(avatarSrc,avatarTxt);
     const location = useLocation();
 
     if(location.pathname==="/profile"){
@@ -99,6 +99,7 @@ const PersonalInfo = props => {
         // Add input values and the avatar
         data.append("values", JSON.stringify(values));
         data.append("avatar", avatar);
+
 
         // Send PUT request to update user data and upload the avatar
         fetch(baseUrl + user._id, {
