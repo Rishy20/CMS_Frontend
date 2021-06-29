@@ -40,7 +40,7 @@ export default function Login({setLogin}){
             <div>
                 <PageTitleWrap title={"Login"}/>
                 <div className={"login-body-container"}>
-                    <div className="user-login-body">
+                    <div className="user-login-body" data-testid="login">
                         <PageTitle title="LOGIN"/>
                         <div className="login-form">
                             <form onSubmit={handleSubmit}>

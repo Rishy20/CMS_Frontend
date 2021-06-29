@@ -1,4 +1,5 @@
 import {useState,useEffect} from "react";
+import regeneratorRuntime from "regenerator-runtime";
 
 //This custom hook handles fetches
 export const useFetch = (url) =>{
