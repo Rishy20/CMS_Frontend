@@ -2,7 +2,7 @@
   "name": "cms_frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.jsx",
+  "main": "index.html",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html"
