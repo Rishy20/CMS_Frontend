@@ -4,6 +4,7 @@ import SubTitle from "./SubTitle";
 import WorkShopItem from "./WorkShopItem";
 import Button from "../Button";
 import {useFetch} from "../useFetch";
+import {Link} from "react-router-dom";
 
 export default function Workshops(){
     const {data} = useFetch("https://icaf.site/api/v1/workshops/approved");
@@ -21,7 +22,7 @@ export default function Workshops(){
                                 })
                             }
                         </div>
-                        <Button name="All Workshops" btnStyle = "btn-view-all"/>
+                        <Link to={"/workshops"}><Button name="All Workshops" btnStyle = "btn-view-all"/></Link>
                     </>
             }
         </div>

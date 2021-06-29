@@ -3,50 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ChangePassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ChangePassword.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ConfirmationItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ConfirmationItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/EventCount.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/EventCount.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Speakers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Speakers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Sponsor.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Sponsor.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/TrackItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/TrackItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Tracks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Tracks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Home/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Input.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Input.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/KeynoteItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/KeynoteItem.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Notifications.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Notifications.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProfileForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProfileForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/RegisterTimer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/RegisterTimer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Schedule/Schedule.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Schedule/Schedule.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ScheduleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ScheduleItem.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Submission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Submission.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/TicketType.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TicketType.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Tickets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tickets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserConfirmation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserConfirmation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/UserRegisterForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/UserRegisterForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Authors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Authors.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForPapers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/CallForProposals.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Downloads.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Downloads.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Keynotes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Keynotes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/UserProfile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/Notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Notification.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/Schedule.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Schedule.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/styles/Tickets.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Tickets.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +66,23 @@
       <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\components" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -145,7 +127,8 @@
       <workItem from="1623317462605" duration="2406000" />
       <workItem from="1623448934298" duration="4745000" />
       <workItem from="1624635588937" duration="13413000" />
-      <workItem from="1624799107571" duration="40552000" />
+      <workItem from="1624799107571" duration="41248000" />
+      <workItem from="1624951795636" duration="10467000" />
     </task>
     <servers />
   </component>

@@ -36,7 +36,7 @@ function Tickets({setTicket,back,ticket}){
                                     price={ticket.price}
                                     description= {ticket.description}
                                     onClick={setIsSelected}
-                                    isSelected={isSelected}
+                                    isSelected={isSelected.name}
                                 />
                             }
 
@@ -45,36 +45,11 @@ function Tickets({setTicket,back,ticket}){
                 }
 
             </div>
-            {/*<table className="ticket-table">*/}
-            {/*    <thead>*/}
-            {/*    <tr className="ticket-heading">*/}
-            {/*        <th></th>*/}
-            {/*        <th>*/}
-            {/*            <TicketType name="VIP Pass" price="1500" description="Get the full experience with access to the in-personas well as the digital event. Limited availability." onClick={setIsSelected} isSelected={isSelected}/>*/}
-            {/*        </th>*/}
-            {/*        <th>*/}
-            {/*            <TicketType name="Premium Pass" price="2500" description="Get the full experience with access to the in-personas well as the digital event. Limited availability." onClick={setIsSelected} isSelected={isSelected}/>*/}
-            {/*        </th>*/}
-            {/*        <th>*/}
-            {/*            <TicketType name="Platinum Pass" price="5000" description="Get the full experience with access to the in-personas well as the digital event. Limited availability." onClick={setIsSelected} isSelected={isSelected}/>*/}
-            {/*        </th>*/}
-            {/*        <th>*/}
-            {/*            <TicketType name="Conference Pass" price="500" description="Get the full experience with access to the in-personas well as the digital event. Limited availability." onClick={setIsSelected} isSelected={isSelected}/>*/}
-            {/*        </th>*/}
-            {/*    </tr>*/}
 
-            {/*    </thead>*/}
-            {/*    <tbody>*/}
-            {/*    <TicketFeatures/>*/}
-            {/*    <TicketFeatures/>*/}
-            {/*    <TicketFeatures/>*/}
-            {/*    <TicketFeatures/>*/}
-            {/*    </tbody>*/}
-            {/*</table>*/}
             <p className="ticket-error">{error?"Please Select a Ticket":''}</p>
             <div className="next-btn">
                 <Button btnStyle="btn-next" name="Next" onclick={handleSelect} />
-                <Button btnStyle="btn-cancel" name="Cancel" onclick={back}/>
+                <Button btnStyle="btn-cancel" name="Back" onclick={back}/>
             </div>
 
         </div>

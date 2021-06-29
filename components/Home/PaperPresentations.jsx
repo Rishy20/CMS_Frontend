@@ -4,6 +4,7 @@ import {useFetch} from "../useFetch";
 import WorkShopItem from "../Home/WorkShopItem";
 import SubTitle from "./SubTitle";
 import Button from "../Button";
+import {Link} from "react-router-dom";
 
 export default function PaperPresentations(){
     const {data} = useFetch("https://icaf.site/api/v1/researchers/approved");
@@ -29,7 +30,7 @@ export default function PaperPresentations(){
                                     })
                                 }
                             </div>
-                            <Button name="All Presentations" btnStyle = "btn-view-all"/>
+                            <Link to={"/authors/presentations"}><Button name="All Presentations" btnStyle = "btn-view-all"/></Link>
                         </div>
                     </>
             }

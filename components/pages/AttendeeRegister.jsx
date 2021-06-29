@@ -18,26 +18,14 @@ function AttendeeRegister(){
     //method to display error message
     const [message,setMessage] = useState(null);
     const [isOpen,setIsOpen] = useState(false);
-
-    function submitForm(data){
-        if(data.status==="Fail"){
-
-            setIsSubmitted(false);
-            togglePopup();
-        }else{
-            setIsSubmitted(true);
-            setMessage(false);
-            setValues({});
-            togglePopup()
-        }
-    }
+    let paymentId;
     function detailsEntered(val){
         setIsDetailEntered(true);
         setValues(val);
     }
 
     function setTicket(ticket){
-        setValues({...values,ticket});
+        setValues({...values,ticket:ticket.name,price:ticket.price});
         setIsTicketSelected(true);
     }
 
@@ -50,6 +38,82 @@ function AttendeeRegister(){
     function backToTicket(){
         setIsTicketSelected(false)
     }
+
+    function submitForm(attendee){
+        console.log(attendee)
+        fetch("https://payment.icaf.site/api/v1/payment",{
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+                'x-api-key': 'ffd22t7434bf39xh@jhjk#$JKb45&*nkdldcvv'
+            },
+            method:"POST",
+            body: JSON.stringify({
+                chname:attendee.chname,
+                cvc:attendee.cvc,
+                cnum:attendee.cnum,
+                total:attendee.price,
+                expiry:attendee.expiry
+            })
+        }).then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.status === "Success") {
+                    paymentId = data.paymentId
+                    fetch("https://icaf.site/api/v1/attendees", {
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                        },
+                        method: "POST",
+                        body: JSON.stringify(attendee)
+                    }).then(res => res.json())
+                        .then(data => {
+                            console.log(data)
+
+                            if (data.status === "Success") {
+
+                                fetch("https://icaf.site/api/v1/payments", {
+                                    headers: {
+                                        'Accept': 'application/json',
+                                        'Content-Type': 'application/json',
+                                    },
+                                    method: "POST",
+                                    body: JSON.stringify({
+                                        paymentId: paymentId,
+                                        userId: data.id,
+                                        reason: "Registration",
+                                        amount: parseInt(attendee.price)
+                                    })
+                                }).then(res => res.json())
+                                    .then(data => {
+                                        console.log(data)
+
+                                        if (data.status === "Success") {
+                                            setIsSubmitted(true);
+                                            togglePopup()
+                                        } else {
+                                            setMessage(data.msg);
+                                            setIsSubmitted(false);
+                                            togglePopup();
+                                        }
+                                    })
+                            }else{
+                                setMessage(data.msg);
+                                setIsSubmitted(false);
+                                togglePopup();
+                            }
+                        })
+                }else{
+                    setMessage(data.message);
+                    setIsSubmitted(false);
+                    togglePopup();
+                }
+            })
+
+    }
+
+
     return (
         <div>
             <PageTitleWrap title={"Register"}/>

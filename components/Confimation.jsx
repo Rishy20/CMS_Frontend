@@ -5,7 +5,16 @@ import Grid from "@material-ui/core/Grid";
 
 import Form from "./Form";
 import ConfirmationItem from "./ConfirmationItem";
+import PaymentForm from "./PaymentForm";
 
+const style = {
+    total: {
+        fontWeight: 600,
+        marginTop: 20,
+        fontSize: 20,
+        paddingBottom:15
+    }
+}
 const inputs=[
     {
         label:"Card holder's name",
@@ -69,12 +78,16 @@ const url = "https://icaf.site/api/v1/attendees";
 function Confirmation(props){
 
     const {details,submitForm,back} = props;
+    console.log(details);
     const names={
         ...details,
         chname:'',
         cnum:'',
         expiry:'',
         cvc:''
+    }
+    function submit(data){
+        submitForm(data);
     }
 
     //Buttons to be displayed in the form
@@ -85,7 +98,7 @@ function Confirmation(props){
             type:"Submit"
         },
         {
-            name:"Cancel",
+            name:"Back",
             style:"btn-cancel",
             onclick:back
         },
@@ -110,8 +123,13 @@ function Confirmation(props){
 
                 <div>
                     <PageTitle title="PAYMENT INFORMATION"/>
+
                     <div className="payment-body">
-                        <Form inputs={inputs} names={names} callback={submitForm} btns={buttons} url={url}/>
+                        <div style={style.total}>
+                            Total : Rs.{parseInt(details.price).toFixed(2)}
+                        </div>
+                        <Form inputs={inputs} names={names} callback={submit} btns={buttons} />
+
                     </div>
                 </div>
 
