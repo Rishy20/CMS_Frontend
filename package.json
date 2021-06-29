@@ -2,9 +2,10 @@
   "name": "cms_frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "start": "parcel index.html",
+
   },
   "author": "",
   "license": "ISC",
