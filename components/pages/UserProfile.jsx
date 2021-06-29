@@ -83,12 +83,12 @@ const UserProfile = ({baseUrl, user, setUser, ...props}) => {
                                 </Avatar>
                             }
 
-                            title={`${user.fname} ${user.lname}`}
+                            title={user.role==="workshop"?user.presentersName:`${user.fname} ${user.lname}`}
                             titleTypographyProps={{
                                 variant: "h5",
                             }}
 
-                            subheader={user.role}
+                            subheader={user.role==="workshop"?"Workshop Presenter":user.role}
                             subheaderTypographyProps={{
                                 variant: "subtitle2",
                                 style: {textTransform: "capitalize"}

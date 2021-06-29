@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confimation.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Home/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Workshops.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Submission.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Submission.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/TicketType.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/TicketType.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Tickets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Tickets.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/MySubmissions.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/MySubmissions.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/UserProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/styles/Notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/components/styles/Notification.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,6 +125,8 @@
       <workItem from="1624635588937" duration="13413000" />
       <workItem from="1624799107571" duration="41248000" />
       <workItem from="1624951795636" duration="10467000" />
+      <workItem from="1624975057247" duration="3627000" />
+      <workItem from="1624981103294" duration="1653000" />
     </task>
     <servers />
   </component>

@@ -24,10 +24,19 @@ const PersonalInfo = props => {
     console.log(avatarSrc,avatarTxt);
     const location = useLocation();
 
-    if(location.pathname==="/profile"){
+    if(user.role==="researcher"){
         inputs = [
             {label: "First Name", name: "fname"},
             {label: "Last Name", name: "lname"},
+            {label: "Phone", name: "contact"},
+            {label: "Email", name: "email"},
+            {label: "Profession", name: "jobTitle"},
+            {label: "Company", name: "company"},
+        ]
+    }else{
+        inputs = [
+            {label: "Workshop Name", name: "workshopName"},
+            {label: "Presenter", name: "presentersName"},
             {label: "Phone", name: "contact"},
             {label: "Email", name: "email"},
             {label: "Profession", name: "jobTitle"},

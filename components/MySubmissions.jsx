@@ -23,8 +23,14 @@ export default function MySubmissions({user,url}){
             </Typography>
             <hr className="divider" />
             <div className={"submission-items"}>
-                <DownloadItem name={user.paper && user.paper.split("-")[1]} url={`${url}paper/${user.paper}`} file={user.paper} status={user.status}/>
-            </div>
+                {
+                    user.role === "researcher" ?
+                        <DownloadItem name={user.paper && user.paper.split("-")[1]} url={`${url}paper/${user.paper}`} file={user.paper} status={user.status}/>
+                        :
+                        <DownloadItem name={user.proposal && user.proposal.split("-")[1]} url={`${url}proposal/${user.proposal}`} file={user.proposal} status={user.status}/>
+
+                }
+                 </div>
         </div>
     )
 }
