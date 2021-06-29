@@ -10,7 +10,7 @@ import ppt from 'url:../public/images/powerpoint.png';
 const allowedFileTypes = ["pdf","vnd.openxmlformats-officedocument.wordprocessingml.document","msword","vnd.ms-powerpoint","vnd.openxmlformats-officedocument.presentationml.presentation"];
 
 function FileUpload({
-    callback,
+    callback,setPreview,
     maxFileSize = DEFAULT_MAX_FILE_SIZE,
     type,
     label,
@@ -32,6 +32,8 @@ function FileUpload({
             let updatedFiles = addNewFiles(newFiles);
             setFiles(updatedFiles);
             callUpdateFiles(updatedFiles);
+            setPreview && setPreview(URL.createObjectURL(updatedFiles.file));
+
         }
     };
 
@@ -81,6 +83,8 @@ function FileUpload({
         delete files[fileName];
         setFiles({ ...files });
         callUpdateFiles({ ...files });
+        setPreview && setPreview("");
+
     };
 
     return (

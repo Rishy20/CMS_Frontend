@@ -7,7 +7,7 @@ import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
 export default function Workshops(){
 
-    const {data} = useFetch("https://icaf.site/api/v1/workshops/approved");
+    const {data} = useFetch("https://api.icaf.site/api/v1/workshops/approved");
 
     return (
         <div>

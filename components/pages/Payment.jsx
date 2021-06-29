@@ -6,7 +6,7 @@ import Popup from "../Popup";
 export default function Payment({total,user,setUser}){
 
     const submitForm = (values) => {
-        fetch("http://localhost:3001/api/v1/payment",{
+        fetch("https://payment.icaf.site/api/v1/payment",{
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -17,7 +17,7 @@ export default function Payment({total,user,setUser}){
         }).then(res => res.json())
             .then(data=>{
                 if(data.status==="Success"){
-                    fetch("http://localhost:3000/api/v1/payments",{
+                    fetch("https://api.icaf.site/api/v1/payments",{
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json',

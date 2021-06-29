@@ -1,7 +1,6 @@
 import React from "react";
-import './SubHero.css'
+import './styles/SubHero.css'
 import Grid from "@material-ui/core/Grid";
-const about = "ICAF is an academic  conference organized by SLIIT, where industry researchers will present their findings and implementations of different programming languages including Java, JavaScript, Python etc."
 function SubHero({data,date}){
     const location = data.location ? data.location.split(","):[];
     return(

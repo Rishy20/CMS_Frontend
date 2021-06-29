@@ -5,9 +5,9 @@ import {useFetch} from "../useFetch";
 import moment from "moment";
 
 export default function EventCount({info}){
-    const speakers = useFetch("https://icaf.site/api/v1/keynotes/count");
-    const researchers = useFetch("https://icaf.site/api/v1/researchers/count");
-    const workshops = useFetch("https://icaf.site/api/v1/workshops/count");
+    const speakers = useFetch("https://api.icaf.site/api/v1/keynotes/count");
+    const researchers = useFetch("https://api.icaf.site/api/v1/researchers/count");
+    const workshops = useFetch("https://api.icaf.site/api/v1/workshops/count");
 
     const startDate = info.length > 0 && moment(info[0].startDate, "MM/DD/YYYY");
     const endDate = info.length > 0 && moment(info[0].endDate, "MM/DD/YYYY");

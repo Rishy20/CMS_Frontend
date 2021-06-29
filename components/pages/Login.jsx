@@ -15,7 +15,7 @@ const names={
     password:''
 }
 //Login url
-const url = "https://icaf.site/api/v1/login"
+const url = "https://api.icaf.site/api/v1/login"
 export default function Login({setLogin}){
     //Import methods from useForm hook
     const {handleChange, handleSubmit, values, errors } = useForm(submitForm,validate,names,url);

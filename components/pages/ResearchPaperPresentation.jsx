@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
-import SpeakerItem from "../Home/SpeakerItem";
-import researcherItem from "../Home/WorkShopItem";
 import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
 import WorkShopItem from "../Home/WorkShopItem";
 export default function ResearchPaperPresentation(){
-    const {data} = useFetch("https://icaf.site/api/v1/researchers/approved");
+    const {data} = useFetch("https://api.icaf.site/api/v1/researchers/approved");
     return (
         <div>
 

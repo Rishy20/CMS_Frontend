@@ -7,7 +7,7 @@ import {useFetch} from "../useFetch";
 import {Link} from "react-router-dom";
 
 export default function Workshops(){
-    const {data} = useFetch("https://icaf.site/api/v1/workshops/approved");
+    const {data} = useFetch("https://api.icaf.site/api/v1/workshops/approved");
 
     return(
         <div className="workshops">

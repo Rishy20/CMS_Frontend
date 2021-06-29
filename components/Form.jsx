@@ -80,7 +80,6 @@ function Form(props){
                 </Grid>
                 <div style={props.btnstyle==='top'? btnTop:btnStyle}>
                     {
-
                         buttons.map(btn => {
                             return <Button btnStyle={btn.style} name={btn.name} type={btn.type} key={btn.name} onclick={btn.onclick}/>
                         })

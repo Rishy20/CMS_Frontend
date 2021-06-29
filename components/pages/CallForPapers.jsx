@@ -19,7 +19,7 @@ const btnContainer={
 
 export default function CallForPapers(){
 
-    const {data} = useFetch("https://icaf.site/api/v1/pages/callforpapers")
+    const {data} = useFetch("https://api.icaf.site/api/v1/pages/callforpapers")
 
     return(
         <div>

@@ -74,7 +74,7 @@ const confirmationItems=[
     },
 ]
 //Form Submit Url
-const url = "https://icaf.site/api/v1/attendees";
+const url = "https://api.icaf.site/api/v1/attendees";
 function Confirmation(props){
 
     const {details,submitForm,back} = props;

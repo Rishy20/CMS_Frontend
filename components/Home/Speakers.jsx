@@ -7,7 +7,7 @@ import Button from "../Button";
 import {useFetch} from "../useFetch";
 import {Link} from "react-router-dom";
 function Speakers(){
-    const {data} = useFetch("https://icaf.site/api/v1/keynotes");
+    const {data} = useFetch("https://api.icaf.site/api/v1/keynotes");
     return(
         <div className={"speakers"}>
             <SubTitle text="Speakers" white={true}/>
@@ -21,7 +21,7 @@ function Speakers(){
                             job={speaker.jobTitle}
                             company={speaker.company}
                             country={speaker.country}
-                            img={`https://icaf.site/api/v1/keynotes/image/${speaker.img}`}
+                            img={`https://api.icaf.site/api/v1/keynotes/image/${speaker.img}`}
                         />
                     })
                 }

@@ -3,7 +3,7 @@ import './App.css'
 import {BrowserRouter as Router, Switch, Route,Redirect} from 'react-router-dom';
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer";
-import Schedule from "./components/Schedule/Schedule";
+import Schedule from "./components/pages/Schedule";
 import Authors from "./components/pages/Authors";
 import Workshops from "./components/pages/Workshops";
 import Downloads from "./components/pages/Downloads";
@@ -35,7 +35,7 @@ function App(){
         Cookies.remove("token");
         setLoginStatus(false)
     }
-    let baseUrl = "https://icaf.site/api/v1/";
+    let baseUrl = "https://api.icaf.site/api/v1/";
 
     // User account data states
     const [user, setUser] = useState({
@@ -54,7 +54,7 @@ function App(){
 
 
         const role = loginStatus.userType;
-        baseUrl = `https://icaf.site/api/v1/${role}s/`
+        baseUrl = `https://api.icaf.site/api/v1/${role}s/`
 
         // Fetch and set user data using the set API URL
         useEffect(() => {
@@ -72,7 +72,7 @@ function App(){
 
 
     //Get the fetched Data
-    const  {loading,data} = useFetch("https://icaf.site/api/v1/info");
+    const  {loading,data} = useFetch("https://api.icaf.site/api/v1/info");
 
     return(
     <div className='App'>
@@ -126,24 +126,27 @@ function App(){
                 <Route exact path="/author/payment">
                     <Payment total={data.length>0 && data[0].paperSubmissionAmount} user={user} setUser={setUser}/>
                 </Route>
+
                 <Route exact path="/profile">
+                    {loginStatus ?
                     <div className="profile-body">
                         <UserProfile
-                            login={loginStatus}
                             baseUrl={baseUrl}
+                            isUser={true}
+                            id = {loginStatus.id}
+                            role = {loginStatus.userType}
                             user={user}
-                            setUser={setUser}
                             avatarSrc={avatarSrc}
                             avatarTxt={avatarTxt}
-                            isUser={true}
                         />
                     </div>
+                        :
+                        <Redirect to={"/"}/>
+                    }
                 </Route>
             </Switch>
             <Footer/>
         </Router>
-
-
     </div>
 )
 }

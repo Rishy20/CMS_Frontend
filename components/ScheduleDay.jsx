@@ -6,7 +6,7 @@ import moment from "moment";
 
 export function ScheduleDay(props){
 
-    const {data} = useFetch(`http://localhost:3000/api/v1/events/day/${props.day}`)
+    const {data} = useFetch(`https://api.icaf.site/api/v1/events/day/${props.day}`)
     return(
         <div>
             <div className={"day-body"}>

@@ -6,7 +6,7 @@ import KeynoteItem from "../KeynoteItem";
 import {useFetch} from "../useFetch";
 
 export default function Keynotes(props){
-    const {data} = useFetch("https://icaf.site/api/v1/keynotes");
+    const {data} = useFetch("https://api.icaf.site/api/v1/keynotes");
     return(
         <div>
             <PageTitleWrap title={"Keynotes"}/>

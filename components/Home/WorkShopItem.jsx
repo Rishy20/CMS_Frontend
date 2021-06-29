@@ -4,7 +4,7 @@ export default function WorkShopItem(props){
     return(
         <div className="workshop-item">
             <div className="workshop-item-img">
-                <img src={`https://icaf.site/api/v1/workshops/image/${props.img}`}/>
+                <img src={`https://api.icaf.site/api/v1/workshops/image/${props.img}`}/>
             </div>
             <div className="workshop-item-content">
                 <div className="workshop-heading">

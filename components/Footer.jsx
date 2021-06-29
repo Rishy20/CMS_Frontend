@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/Footer.css"
+import {Link} from "react-router-dom";
 
 export default function Footer(){
 
@@ -12,11 +13,11 @@ export default function Footer(){
                 </div>
             </div>
             <div className={"footer-link-container"}>
-                <span className={"footer-link"}>Home</span>
-                <span className={"footer-link"}>Schedule</span>
-                <span className={"footer-link"}>Speakers</span>
-                <span className={"footer-link"}>Workshops</span>
-                <span className={"footer-link"}>Contact Us</span>
+                <Link to={"/"}> <span className={"footer-link"}>Home</span> </Link>
+                <Link to={"/schedule"}> <span className={"footer-link"}>Schedule</span> </Link>
+                <Link to={"/keynotes"}> <span className={"footer-link"}>Speakers</span> </Link>
+                <Link to={"/workshops"}> <span className={"footer-link"}>Workshops</span> </Link>
+                <Link to={"/contact"}><span className={"footer-link"}>Contact Us</span> </Link>
             </div>
             <div className={'footer-social-icons'}>
                 <i className="fab fa-facebook"></i>

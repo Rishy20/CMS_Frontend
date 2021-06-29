@@ -7,7 +7,7 @@ import Button from "../Button";
 import {Link} from "react-router-dom";
 
 export default function PaperPresentations(){
-    const {data} = useFetch("https://icaf.site/api/v1/researchers/approved");
+    const {data} = useFetch("https://api.icaf.site/api/v1/researchers/approved");
     return (
         <div>
 

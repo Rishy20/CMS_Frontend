@@ -91,7 +91,6 @@ function Header({loginStatus,logout,userId,...props}){
                 ):
                     <>
                     <Link to="/login"><HeaderItem text="Login"/></Link>
-                    <Link to="/register"><HeaderItem text="Register"/></Link>
                     </>
                 }
 

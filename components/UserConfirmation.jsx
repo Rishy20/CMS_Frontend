@@ -6,7 +6,7 @@ import ConfirmationItem from "./ConfirmationItem";
 import Button from "./Button";
 
 //Form Submit Url
-const url = "https://icaf.site/api/v1/researchers";
+const url = "https://api.icaf.site/api/v1/researchers";
 function UserConfirmation(props){
 
     const {details,submitForm} = props;

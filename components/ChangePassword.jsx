@@ -62,7 +62,7 @@ const ChangePassword = props => {
     const authenticate = () => {
         const data = {email: user.email, password: values.currentPassword}
         console.log(data)
-        fetch(`https://icaf.site/api/v1/login`, {
+        fetch(`https://api.icaf.site/api/v1/login`, {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
@@ -104,10 +104,9 @@ const ChangePassword = props => {
 
     // Validate and submit form if no errors were found
     useEffect(() => {
+
             if(Object.keys(errors).length === 0 && isSubmitting ) {
-                if (baseUserUrl) {
                     submitForm();
-                }
             } else {
                 setIsSubmitting(false);
             }
@@ -225,7 +224,6 @@ const ChangePassword = props => {
                     btnStyle="btn-save"
                     name="Save Changes"
                     type="submit"
-                    onclick={submitForm}
                     disabled={isSubmitting}
                 />}
             </div>

@@ -4,7 +4,7 @@ import Button from "../Button";
 import SubHero from "../SubHero"
 import {Link} from "react-router-dom";
 
-const subheading = "28th June, Sri Lanka Institute of Information Technology, Malabe"
+
 function Hero({data}){
     const item = data.length>0?data[0]:{}
     const startDate = item.hasOwnProperty("startDate")&&item.startDate.split("/")

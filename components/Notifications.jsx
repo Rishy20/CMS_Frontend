@@ -28,13 +28,13 @@ export default function Notification({userId}){
 
         if(userId) {
             //Fetch Notifications
-            await fetch(`https://icaf.site/api/v1/notification/${userId}`)
+            await fetch(`https://api.icaf.site/api/v1/notification/${userId}`)
                 .then(res => res.json())
                 .then(data => setNotifications(data.notifications.reverse()))
                 .catch(err => console.log(err));
 
             //Fetch Notification Count
-            await fetch(`https://icaf.site/api/v1/notification/count/${userId}`)
+            await fetch(`https://api.icaf.site/api/v1/notification/count/${userId}`)
                 .then(res => res.json())
                 .then(data => setCount(data))
                 .catch(err => console.log(err));
@@ -55,7 +55,7 @@ export default function Notification({userId}){
 
         if(count!=0 && !isVisible){
 
-            fetch("https://icaf.site/api/v1/notification",{
+            fetch("https://api.icaf.site/api/v1/notification",{
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'

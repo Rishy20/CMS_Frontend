@@ -60,7 +60,7 @@ function AttendeeRegister(){
                 console.log(data)
                 if (data.status === "Success") {
                     paymentId = data.paymentId
-                    fetch("https://icaf.site/api/v1/attendees", {
+                    fetch("https://api.icaf.site/api/v1/attendees", {
                         headers: {
                             'Accept': 'application/json',
                             'Content-Type': 'application/json',
@@ -73,7 +73,7 @@ function AttendeeRegister(){
 
                             if (data.status === "Success") {
 
-                                fetch("https://icaf.site/api/v1/payments", {
+                                fetch("https://api.icaf.site/api/v1/payments", {
                                     headers: {
                                         'Accept': 'application/json',
                                         'Content-Type': 'application/json',

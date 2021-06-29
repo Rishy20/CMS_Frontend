@@ -6,7 +6,7 @@ import SpeakerItem from "../Home/SpeakerItem";
 import "../styles/Speakers.css"
 import {useFetch} from "../useFetch";
 export default function Authors() {
-    const {data} = useFetch("https://icaf.site/api/v1/researchers/approved");
+    const {data} = useFetch("https://api.icaf.site/api/v1/researchers/approved");
     return (
         <div className={"authors"}>
 
@@ -21,7 +21,7 @@ export default function Authors() {
                             name={researcher.fname + " " + researcher.lname}
                             job={researcher.jobTitle} company={researcher.company}
                             country={researcher.country}
-                            img={`https://icaf.site/api/v1/researchers/image/${researcher.avatar}`}
+                            img={`https://api.icaf.site/api/v1/researchers/image/${researcher.avatar}`}
                         />
                     })
                 }

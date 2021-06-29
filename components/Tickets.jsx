@@ -3,9 +3,6 @@ import PageTitle from "./PageTitle";
 import "./styles/Tickets.css"
 import Button from "./Button";
 import TicketType from "./TicketType";
-import TicketFeatures from "./TicketFeatures";
-import useForm from "./useForm";
-import validate from "./validateInfo";
 import {useFetch} from "./useFetch";
 
 function Tickets({setTicket,back,ticket}){
@@ -13,7 +10,7 @@ function Tickets({setTicket,back,ticket}){
     const [isSelected,setIsSelected] = React.useState(ticket);
     const [error, setError] = React.useState(false)
     // const {handleChange, handleSubmit, values, errors } = useForm(detailsEntered,validate,val,url,setValue );
-    const {data} = useFetch("https://icaf.site/api/v1/tickets")
+    const {data} = useFetch("https://api.icaf.site/api/v1/tickets")
     function handleSelect(){
         if(isSelected !== null){
             setTicket(isSelected);

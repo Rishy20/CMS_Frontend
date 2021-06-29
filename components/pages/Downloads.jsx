@@ -6,7 +6,7 @@ import {useFetch} from "../useFetch";
 
 export default function Downloads(){
 
-    const url = "https://icaf.site/api/v1/templates";
+    const url = "https://api.icaf.site/api/v1/templates";
     const {data} = useFetch(url);
 
     return(

@@ -1,10 +1,6 @@
 import React, {useEffect, useState} from 'react';
-import Header from "../Header";
 import Hero from "./Hero";
 import "../styles/Home.css"
-import AttendeeRegister from "../pages/AttendeeRegister";
-import ResearcherRegister from "../pages/ResearcherRegister";
-import Accordion from "../Accordion";
 import RegisterTimer from "../RegisterTimer";
 import EventCount from "./EventCount";
 import {Speaker} from "@material-ui/icons";
@@ -13,13 +9,10 @@ import Workshops from "./Workshops";
 import Tracks from "./Tracks";
 import Sponsor from "./Sponsor";
 import PaperPresentations from "./PaperPresentations"
-import {useFetch} from "../useFetch";
 
 
 //Home Page
 function Home({info}){
-
-
 
     return (
         <div className={"home"}>

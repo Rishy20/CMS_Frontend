@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Title from "../Title";
 import {
     Avatar,
@@ -13,6 +13,7 @@ import TabPanel from "../TabPanel";
 import ProfileForm from "../ProfileForm";
 import MySubmissions from "../MySubmissions";
 import {Link} from "react-router-dom";
+import {useFetch} from "../useFetch";
 
 const useStyles = makeStyles({
     cardContainer: {
@@ -44,7 +45,23 @@ const useStyles = makeStyles({
     }
 })
 
-const UserProfile = ({baseUrl, user, setUser, ...props}) => {
+const UserProfile = ({baseUrl, id, role,...props}) => {
+
+    const [user, setUser] = useState({...props.user});
+    const {data} = useFetch(baseUrl+id);
+    // User data related app-wide UI states
+    const [avatarSrc, setAvatarSrc] = useState(props.avatarSrc);
+    const [avatarTxt, setAvatarTxt] = useState(props.avatarTxt);
+
+    useEffect(()=>{
+        setUser({role,...data});
+        setAvatarSrc(data.avatar && `${baseUrl}image/${data.avatar}`);
+        setAvatarTxt(`${data.fname}${data.lname}`);
+    },[data])
+
+
+
+
     const styles = useStyles();
 
     // Tab state
@@ -76,19 +93,19 @@ const UserProfile = ({baseUrl, user, setUser, ...props}) => {
                         <CardHeader
                             avatar={
                                 <Avatar
-                                    src={props.avatarSrc}
+                                    src={avatarSrc}
                                     className={styles.profilePicLeft}
                                 >
-                                    {props.avatarTxt}
+                                    {avatarTxt}
                                 </Avatar>
                             }
 
-                            title={user.role==="workshop"?user.presentersName:`${user.fname} ${user.lname}`}
+                            title={role==="workshop"?user.presentersName:`${user.fname} ${user.lname}`}
                             titleTypographyProps={{
                                 variant: "h5",
                             }}
 
-                            subheader={user.role==="workshop"?"Workshop Presenter":user.role}
+                            subheader={role==="workshop"?"Workshop Presenter":role}
                             subheaderTypographyProps={{
                                 variant: "subtitle2",
                                 style: {textTransform: "capitalize"}
@@ -183,8 +200,8 @@ const UserProfile = ({baseUrl, user, setUser, ...props}) => {
                                 user={user}
                                 setUser={setUser}
                                 baseUrl={baseUrl}
-                                avatarSrc={props.avatarSrc}
-                                avatarTxt={props.avatarTxt}
+                                avatarSrc={avatarSrc}
+                                avatarTxt={avatarTxt}
                             />
                         </TabPanel>
                         <TabPanel value={tab} index={1}>

@@ -51,6 +51,7 @@ const AvatarSelector = ({callback, avatarSrc, avatarTxt, edit}) => {
 
     // Set preview callback function passed to FileUpload component
     const setPreview = url => {
+        console.log(url)
         url ? setSrc(url) : setSrc(avatarSrc);
     }
 
@@ -76,7 +77,8 @@ const AvatarSelector = ({callback, avatarSrc, avatarTxt, edit}) => {
             </Badge>
 
             <div hidden={!avatarEdit}>
-                {edit && <FileUpload callback={callback} setPreview={setPreview} />}
+                {edit && <FileUpload callback={(file)=>{callback(file)}} type={"image"} />}
+
             </div>
         </>
     )

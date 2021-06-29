@@ -72,6 +72,7 @@ const PersonalInfo = props => {
     const handleAddImg = img => {
         if (img.file) {
             const {file} = img;
+            console.log(file);
             setAvatar(file);
             // Generate file name and set it to values state
             const filename = `${user._id}_${Date.now()}.${file.name.split(".").pop()}`;
@@ -91,6 +92,7 @@ const PersonalInfo = props => {
 
     // Validate and submit form if no errors were found
     useEffect(() => {
+        console.log(errors);
             if(Object.keys(errors).length === 0 && isSubmitting ) {
                 if (baseUrl) {
                     submitForm();
@@ -103,15 +105,15 @@ const PersonalInfo = props => {
 
     // Submit form and handle the results
     const submitForm = () => {
+
         // Create a new form data object
         const data = new FormData();
         // Add input values and the avatar
         data.append("values", JSON.stringify(values));
-        data.append("avatar", avatar);
-
+        data.append("img", avatar);
 
         // Send PUT request to update user data and upload the avatar
-        fetch(baseUrl + user._id, {
+        fetch("https://api.icaf.site/api/v1/workshops/"+user._id, {
             method: "PUT",
             body: data
         }).then(res => res.json())

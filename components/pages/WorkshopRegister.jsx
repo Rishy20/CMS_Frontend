@@ -1,6 +1,4 @@
 import React from 'react';
-
-import RegisterForm from "../RegisterForm";
 import {useState} from "react";
 import Progress from "../Progress";
 import Confirmation from "../Confimation";
@@ -8,11 +6,10 @@ import UserRegisterForm from "../UserRegisterForm";
 import Submission from "../Submission";
 import axios from 'axios';
 import UserConfirmation from "../UserConfirmation";
-import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
 import Popup from "../Popup";
 
-const url = "https://icaf.site/api/v1/workshops";
+const url = "https://api.icaf.site/api/v1/workshops";
 
 
 //Inputs stored as an array so they can be mapped to Input component
@@ -146,6 +143,7 @@ function WorkshopRegister(){
 
         //Create a FormData object and append the data
         const data = new FormData();
+        console.log(values);
         data.append('value',JSON.stringify(values))
         data.append('img',values.img);
         data.append('proposal',values.document);

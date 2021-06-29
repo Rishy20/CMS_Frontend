@@ -16,11 +16,7 @@ function Submission({callback,usertype}){
 
     function submitForm(){
         callback(file);
-        // if(file.length){
-        //     callback(file);
-        // }else{
-        //     setError("Please Select a file");
-        // }
+
     }
 
     return(
