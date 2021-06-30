@@ -3,7 +3,7 @@ import RegisterForm from "../RegisterForm";
 import {useState} from "react";
 import Progress from "../Progress";
 import Tickets from "../Tickets";
-import Confirmation from "../Confimation";
+import Confirmation from "../Confirmation";
 import PageTitleWrap from "../PageTitleWrap";
 import Popup from "../Popup";
 

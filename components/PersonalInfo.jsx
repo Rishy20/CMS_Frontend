@@ -21,7 +21,7 @@ const ERR_MSG = "Failed to save changes. Please try again...";
 const PersonalInfo = props => {
     // Destructure props
     const {styles, user, setUser, baseUrl, avatarSrc, avatarTxt, setSubmitError} = props;
-    console.log(avatarSrc,avatarTxt);
+
     const location = useLocation();
 
     if(user.role==="researcher"){
@@ -75,10 +75,10 @@ const PersonalInfo = props => {
             console.log(file);
             setAvatar(file);
             // Generate file name and set it to values state
-            const filename = `${user._id}_${Date.now()}.${file.name.split(".").pop()}`;
-            setValues({...values, avatar: filename});
+            // const filename = `${user._id}_${Date.now()}.${file.name.split(".").pop()}`;
+            // setValues({...values, avatar: filename});
         } else {
-            setValues({...values, avatar: user.avatar});
+            // setValues({...values, avatar: user.avatar});
             setAvatar(null);
         }
     }
@@ -113,7 +113,7 @@ const PersonalInfo = props => {
         data.append("img", avatar);
 
         // Send PUT request to update user data and upload the avatar
-        fetch("https://api.icaf.site/api/v1/workshops/"+user._id, {
+        fetch(`https://api.icaf.site/api/v1/${user.role}s/${user._id}`, {
             method: "PUT",
             body: data
         }).then(res => res.json())

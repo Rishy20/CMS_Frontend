@@ -2,7 +2,7 @@ import React from "react";
 import PageTitleWrap from "../PageTitleWrap";
 import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
-import WorkShopItem from "../Home/WorkShopItem";
+import PresentationItem from "../Home/PresentationItem";
 export default function ResearchPaperPresentation(){
     const {data} = useFetch("https://api.icaf.site/api/v1/researchers/approved");
     return (
@@ -13,7 +13,7 @@ export default function ResearchPaperPresentation(){
                 <div className="presentation-items">
                     {
                         data && data.map(researcher=>{
-                            return <WorkShopItem
+                            return <PresentationItem
                                 key={researcher._id}
                                 presenter={researcher.fname + " " + researcher.lname}
                                 name={researcher.researchTitle}

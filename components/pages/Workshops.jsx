@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../Header";
 import PageTitleWrap from "../PageTitleWrap";
 import SpeakerItem from "../Home/SpeakerItem";
-import WorkShopItem from "../Home/WorkShopItem";
+import PresentationItem from "../Home/PresentationItem";
 import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
 export default function Workshops(){
@@ -14,10 +14,10 @@ export default function Workshops(){
 
             <PageTitleWrap title={"Workshops"}/>
             <div className={"workshops"}>
-            <div className="workshop-items">
+            <div className="workshop-items" data-testid={"workshop-items"}>
                 {
                     data.map(workshop=>{
-                        return <WorkShopItem
+                        return <PresentationItem
                             name={workshop.workshopName}
                             presenter={workshop.presentersName}
                             job={workshop.jobTitle}

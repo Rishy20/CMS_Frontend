@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d6e4ba3-c62a-4a00-8464-21e4dad4bb97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/__mocks__/fileMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__mocks__/styleMock.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/__tests__/Login.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jest.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/useFetch.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/useFetch.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/hero2.7e14991c.png" beforeDir="false" afterPath="$PROJECT_DIR$/dist/hero2.7e14991c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Confimation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Confirmation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Formbox.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PaperPresentations.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/SpeakerItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SpeakerItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/WorkShopItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/PresentationItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Home/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/Workshops.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PersonalInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PersonalInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/RegisterTimer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/RegisterTimer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/SubHero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Home/SubHero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/AttendeeRegister.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Authors.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Authors.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearchPaperPresentation.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/ResearcherRegister.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/WorkshopRegister.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/pages/Workshops.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/pages/Workshops.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.63f10152.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.63f10152.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.63f10152.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.63f10152.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/hero2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/hero2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +72,11 @@
       <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mohammed Rishard\Desktop\AF Project\cms_frontend\components\Home" />
       <recent name="C:\Users\Mohammed Rishard\Desktop\AF Project\cms_frontend\components\styles" />
       <recent name="C:\Users\Mohammed Rishard\Desktop\AF Project\cms_frontend\components\pages" />
       <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\components\css" />
       <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\components\Home" />
-      <recent name="C:\Users\Mohammed Rishard\Desktop\cms_frontend\components" />
     </key>
   </component>
   <component name="RunManager">
@@ -139,7 +144,8 @@
       <workItem from="1624951795636" duration="10467000" />
       <workItem from="1624975057247" duration="3627000" />
       <workItem from="1624981103294" duration="18137000" />
-      <workItem from="1625008872676" duration="431000" />
+      <workItem from="1625008872676" duration="506000" />
+      <workItem from="1625024200703" duration="11247000" />
     </task>
     <servers />
   </component>

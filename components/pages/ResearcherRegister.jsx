@@ -3,7 +3,7 @@ import React from 'react';
 import RegisterForm from "../RegisterForm";
 import {useState} from "react";
 import Progress from "../Progress";
-import Confirmation from "../Confimation";
+import Confirmation from "../Confirmation";
 import UserRegisterForm from "../UserRegisterForm";
 import Submission from "../Submission";
 import axios from 'axios';

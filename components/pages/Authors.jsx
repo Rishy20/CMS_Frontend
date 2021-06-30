@@ -12,7 +12,7 @@ export default function Authors() {
 
             <PageTitleWrap title={"Authors"}/>
 
-            <div className="speaker-items">
+            <div className="speaker-items" data-testid={"speaker-items"}>
 
                 {
                    data && data.map(researcher=>{

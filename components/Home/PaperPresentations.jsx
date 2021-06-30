@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Workshops.css"
 import {useFetch} from "../useFetch";
-import WorkShopItem from "../Home/WorkShopItem";
+import PresentationItem from "./PresentationItem";
 import SubTitle from "./SubTitle";
 import Button from "../Button";
 import {Link} from "react-router-dom";
@@ -19,7 +19,7 @@ export default function PaperPresentations(){
                             <div className="presentation-items">
                                 {
                                     data && data.map(researcher=>{
-                                        return <WorkShopItem
+                                        return <PresentationItem
                                             key={researcher._id}
                                             presenter={researcher.fname + " " + researcher.lname}
                                             name={researcher.researchTitle}

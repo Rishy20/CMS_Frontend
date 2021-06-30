@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Hero from "./Hero";
 import "../styles/Home.css"
-import RegisterTimer from "../RegisterTimer";
+import RegisterTimer from "./RegisterTimer";
 import EventCount from "./EventCount";
 import {Speaker} from "@material-ui/icons";
 import Speakers from "./Speakers";
@@ -15,8 +15,8 @@ import PaperPresentations from "./PaperPresentations"
 function Home({info}){
 
     return (
-        <div className={"home"}>
-            <Hero data={info}/>
+        <div className={"home"} data-testid="home">
+            <Hero data={info} data-testid={"hero"}/>
             <div className="home-body">
                 <div className={"limit-width"}>
                 <h2 className="container-heading">The biggest Application Framework Conference in Sri Lanka</h2>

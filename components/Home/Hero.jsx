@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Hero.css'
 import Button from "../Button";
-import SubHero from "../SubHero"
+import SubHero from "./SubHero"
 import {Link} from "react-router-dom";
 
 

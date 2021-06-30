@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Workshops.css"
 import SubTitle from "./SubTitle";
-import WorkShopItem from "./WorkShopItem";
+import PresentationItem from "./PresentationItem";
 import Button from "../Button";
 import {useFetch} from "../useFetch";
 import {Link} from "react-router-dom";
@@ -15,10 +15,10 @@ export default function Workshops(){
                 data.length > 0 &&
                     <>
                         <SubTitle text="Workshops" />
-                        <div className="workshop-items">
+                        <div className="workshop-items" >
                             {
                                 data && data.map(workshop=>{
-                                    return <WorkShopItem
+                                    return <PresentationItem
                                         name={workshop.workshopName}
                                         presenter={workshop.presentersName}
                                         job={workshop.jobTitle}
